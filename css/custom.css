@@ -437,6 +437,32 @@ a {
 
 /* Components */
 
+/* Forms */
+.form--control-lead {
+    border: 1px solid var(--color-blue);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.control-lead-icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    margin: 0 0.5rem 0 0.3rem;
+}
+
+.control-lead-text {
+    background: var(--color-blue);
+    color: var(--color-white);
+    flex-grow: 1;
+    padding: 0.7rem 0.3rem;
+    font-weight: 350;
+    font-size: 1.3rem;
+}
+
+/* Fomrs */
+
 /* Login */
 .login-body {
     background-color: #d3d1d1;
@@ -475,29 +501,12 @@ a {
     text-align: center;
 }
 
-.login--lead {
-    border: 1px solid var(--color-blue);
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
+.login--form .form--control-lead {
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
 }
 
-.login--icon {
-    width: 2.5rem;
-    height: 2.5rem;
-    margin: 0 0.5rem 0 0.3rem;
-}
-
-.login--text {
-    background: var(--color-blue);
-    color: var(--color-white);
-    flex-grow: 1;
-    padding: 0.7rem 0.3rem;
-    font-weight: 350;
-    font-size: 1.3rem;
+.login--form .control-lead-text {
     border-top-right-radius: 23px;
 }
 
@@ -570,6 +579,38 @@ a {
 
 /* Login */
 
+/* Register */
+.register--header {
+    background: var(--color-blue);
+    color: var(--color-white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem 0;
+}
+
+.register--brand {
+    width: 15rem;
+}
+
+.register--title {
+    color: var(--color-white);
+    text-transform: uppercase;
+    margin: 0;
+    text-align: center;
+}
+
+.register--body {
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+}
+
+.register .form--control-lead {
+    border: 0;
+    border-bottom: 1px solid var(--color-blue);
+}
+
+/* Register */
 /* Grids */
 .grid {
     display: grid;
