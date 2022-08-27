@@ -438,12 +438,24 @@ a {
 /* Components */
 
 /* Login */
+.login-body {
+    background-color: #d3d1d1;
+}
+
+.form-signin.login {
+    background-color: var(--color-white);
+}
+
 .login {
     padding: 3rem 0;
     text-align: center;
 }
 .login--form {
+    width: 100%;
+    max-width: 300px;
     margin: 1rem;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .login hr {
@@ -451,6 +463,9 @@ a {
     height: 1.8px;
     margin-bottom: 2rem;
     opacity: 1;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .login--title {
@@ -461,7 +476,7 @@ a {
 }
 
 .login--lead {
-    border-bottom: 1px solid var(--color-blue);
+    border: 1px solid var(--color-blue);
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -483,7 +498,7 @@ a {
     padding: 0.7rem 0.3rem;
     font-weight: 350;
     font-size: 1.3rem;
-    border-top-right-radius: 25px;
+    border-top-right-radius: 23px;
 }
 
 .login--input input {
@@ -493,6 +508,8 @@ a {
     border-bottom: 1px solid var(--color-blue);
     outline: 0;
     border-radius: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .login--input label {
@@ -528,17 +545,27 @@ a {
 .pps-footer.login {
     margin-top: 1rem;
     padding: 0;
+    border: 0;
 }
 
 .login .block.footer,
 .login .block.footer .footer__copyright {
-    color: var(--color-blue);
+    color: var(--color-blue-dark);
+}
+
+.login .block.footer .footer__copyright {
+    opacity: 0.6;
 }
 
 .login .block.footer {
-    background: var(--color-white);
     padding-top: 0.3rem;
     padding-bottom: 2rem;
+}
+
+@media screen and (min-width: 400px) {
+    .login--form {
+        max-width: 350px;
+    }
 }
 
 /* Login */
