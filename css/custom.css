@@ -461,6 +461,17 @@ a {
     font-size: 1.3rem;
 }
 
+.form--input-line input {
+    background: var(--color-white);
+    color: var(--color-blue);
+    border: 0;
+    border-bottom: 1px solid var(--color-blue);
+    outline: 0;
+    border-radius: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
 /* Fomrs */
 
 /* Login */
@@ -510,18 +521,7 @@ a {
     border-top-right-radius: 23px;
 }
 
-.login--input input {
-    background: var(--color-white);
-    color: var(--color-blue);
-    border: 0;
-    border-bottom: 1px solid var(--color-blue);
-    outline: 0;
-    border-radius: 0;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-.login--input label {
+.form--input-line label {
     color: var(--color-blue-dark);
 }
 
@@ -608,6 +608,20 @@ a {
 .register .form--control-lead {
     border: 0;
     border-bottom: 1px solid var(--color-blue);
+}
+
+.register .form--input-line input,
+.register .form--input-line label {
+    margin-bottom: 0;
+}
+
+.register .form--input-line input {
+    color: var(--color-blue-dark);
+    margin-top: 0;
+}
+
+.register .form--input-line label {
+    color: var(--color-blue);
 }
 
 /* Register */
