@@ -438,6 +438,10 @@ a {
 /* Components */
 
 /* Forms */
+.form--control-group {
+    margin: 1rem 0;
+}
+
 .form--control-lead {
     border: 1px solid var(--color-blue);
     display: flex;
@@ -529,11 +533,9 @@ a {
     color: var(--color-blue-dark);
 }
 
-.login--form .btn {
+.login--form .btn, 
+.register .btn {
     width: 100%;
-}
-
-.login--form .btn {
     margin-top: 0.25rem;
     margin-bottom: 0.25rem;
     font-weight: 350;
@@ -541,12 +543,14 @@ a {
     font-size: 1.1rem;
 }
 
-.login--form .btn[type="submit"] {
+.login--form .btn[type="submit"],
+.register .btn[type="submit"] {
     background: var(--color-success);
     border-color: var(--color-success);
 }
 
-.login--form .btn[type="submit"]:hover {
+.login--form .btn[type="submit"]:hover,
+.register .btn[type="submit"]:hover {
     background-color: #0b4e0b;
     color: var(--color-white);
 }
@@ -624,6 +628,17 @@ a {
     color: var(--color-blue);
 }
 
+.register .radio .form-check-input[type=radio] {
+    border-color: var(--color-blue);
+}
+
+.register .radio .form-check-label {
+    color: var(--color-blue-dark);
+}
+
+.register .date .form--input-line input {
+    background: #ffffff6e;
+}
 /* Register */
 /* Grids */
 .grid {
