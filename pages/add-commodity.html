@@ -26,6 +26,87 @@
 
 <body class="add-commodity-body">
 
+  <div class="container-fluid px-0 pps-header">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light pps-primary-navbar" aria-label="Primary Nav bar">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                <span class="icon--circle">
+                    <img class="icon" src="../images/play.ico" alt="">
+                </span>
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#ppsPrimaryNavbar" aria-controls="ppsPrimaryNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="ppsPrimaryNavbar">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                  </li>
+                  
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdown09" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdown09">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                <div class="user">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a href="" class="nav-link">username</a>
+                        </li>
+                        <li class="">
+                            <span class="icon--circle">
+                                <img class="icon" src="../images/play.ico" alt="">
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+              </div>
+            </div>
+        </nav>
+
+        <nav class="navbar navbar-expand-lg pps-secondary-navbar" aria-label="Secondary Nav bar">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Navbar</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#ppsSecondaryNavbar" aria-controls="ppsSecondaryNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="ppsSecondaryNavbar">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdown09" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdown09">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                <form>
+                  <input class="form-control" type="text" placeholder="Search" aria-label="Search">
+                </form>
+              </div>
+            </div>
+        </nav>
+
+    </header>
+  </div>
 
   <div class="add-commodity-form">
 
@@ -48,7 +129,7 @@
             <div class="names row g-3">
 
               <div class="col-sm-6 form--input-line">
-                <label for="firstName" class="form-label">Commodity Name</label>
+                <label for="firstName" class="form-label">Commodity Name:</label>
                 <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
                 <div class="invalid-feedback">
                   Enter the Name of the Commodity, Please.
@@ -67,15 +148,8 @@
             </div>
 
             <div class="col-sm-6 form--input-line">
-              <label for="lastName" class="form-label">Description <span class="text-muted">(Optional)</span>:</label>
-              <textarea class="form-control" id="lastName" placeholder="describe your commodity item in a few words..." value="" aria-label="textarea"></textarea>
-              <div class="invalid-feedback">
-                Enter your Last Name, Please.
-              </div>
-            </div>
-            <div class="col-sm-6 form--input-line">
               <label for="lastName" class="form-label">Cost Price <span class="text-muted">MWK</span>:</label>
-              <input type="number" maxlength="10" class="form-control" id="lastName" placeholder="" value="" required>
+              <input type="number" class="form-control" id="lastName" placeholder="" value="" required>
               <div class="invalid-feedback">
                 Enter the cost price, please.
               </div>
@@ -94,6 +168,14 @@
               </div>
 
             </div>
+
+            <div class="form--input-line">
+              <label for="lastName" class="form-label">Description <span class="text-muted">(Optional)</span>:</label>
+            </div>
+            <textarea class="form-control" id="lastName" placeholder="describe your commodity item in a few words..." value="" aria-label="textarea"></textarea>
+            <div class="invalid-feedback">
+              Enter your Last Name, Please.
+            </div>
           </div>
 
         </div>
@@ -107,17 +189,69 @@
 
   </div>
     
-  <div class="container-fluid px-0 pps-footer register">
-      <footer class="block footer">
-        <div class="grid footer__sections">
-            <section class="footer__brand">
-                <img src="/images/pc.ico" alt="">
-                <p class="footer__copyright">
-                    Copyright 2022 Grocery POS system
-                </p>
-            </section>
-        </div>
-      </footer>
+  <div class="container-fluid px-0 pps-footer">
+    <footer class="block block--dark footer">
+      <div class="grid footer__sections">
+          <section class="collapsible collapsible--expanded footer__section">
+              <header class="collapsible__header">
+                  <h2 class="collapsible__heading footer__heading">Products</h2>
+                  <img src="/images/chevron.svg" alt="" class="icon icon--white collapsible__chevron">
+              </header>
+              <div class="collapsible__content">
+                  <ul class="list">
+                      <li><a href="#">Free Web Hosting</a></li>
+                      <li><a href="#">Free Automated Wordpress</a></li>
+                      <li><a href="#">Migrations</a></li>
+                  </ul>
+              </div>
+          </section>
+          <section class="collapsible footer__section">
+              <header class="collapsible__header">
+                  <h2 class="collapsible__heading footer__heading">Company</h2>
+                  <img src="/images/chevron.svg" alt="" class="icon icon--white collapsible__chevron">
+              </header>
+              <div class="collapsible__content">
+                  <ul class="list">
+                      <li><a href="#">About</a></li>
+                      <li><a href="#">Affiliates</a></li>
+                      <li><a href="#">Blog</a></li>
+                  </ul>
+              </div>
+          </section>
+          <section class="collapsible footer__section">
+              <header class="collapsible__header">
+                  <h2 class="collapsible__heading footer__heading">Support</h2>
+                  <img src="/images/chevron.svg" alt="" class="icon icon--white collapsible__chevron">
+              </header>
+              <div class="collapsible__content">
+                  <ul class="list">
+                      <li><a href="#">Contact</a></li>
+                      <li><a href="#">Knowledge Base</a></li>
+                      <li><a href="#">FAQ</a></li>
+                  </ul>
+              </div>
+          </section>
+          <section class="collapsible footer__section">
+              <header class="collapsible__header">
+                  <h2 class="collapsible__heading footer__heading">Domains</h2>
+                  <img src="/images/chevron.svg" alt="" class="icon icon--white collapsible__chevron">
+              </header>
+              <div class="collapsible__content">
+                  <ul class="list">
+                      <li><a href="#">Domain Checker</a></li>
+                      <li><a href="#">Domain Transfer</a></li>
+                      <li><a href="#">Free Domain</a></li>
+                  </ul>
+              </div>
+          </section>
+          <section class="footer__brand">
+              <img src="/images/pc.ico" alt="">
+              <p class="footer__copyright">
+                  Copyright 2022 Grocery POS system
+              </p>
+          </section>
+      </div>
+    </footer>
   </div>
 
 

@@ -496,6 +496,18 @@ a {
     margin-bottom: 10px;
 }
 
+.form--control-group .date .form--input-line input {
+    background: #ffffffb5;
+}
+
+.form--control-group textarea {
+    border: 1px solid var(--color-blue);
+    color: var(--color-blue-dark);
+    width: 95%;
+    max-width: 800px;
+    margin: 0 0.5rem;
+} 
+
 .form--btn-group {
     padding: 0.5rem;
     display: flex;
@@ -521,7 +533,36 @@ form .btn[type="submit"]:hover {
     color: var(--color-white);
 }
 
-/* Fomrs */
+.form--control-group .form--input-line input,
+.form--control-group .form--input-line label {
+    margin-bottom: 0;
+}
+
+.form--control-group .form--input-line input {
+    color: var(--color-blue-dark);
+    margin-top: 0;
+}
+
+.form--control-group .form--input-line label {
+    color: var(--color-blue);
+}
+
+.form--control-group .form--input-line input[type="file"] {
+    background: var(--color-accent-light);
+}
+
+.form--control-group .form--input-line {
+    width: 100%;
+    max-width: 330px;
+}
+
+@media screen and (min-width: 900px) {
+    .form--control-group .form--input-line {
+        max-width: 400px;
+    }
+}
+
+/* Forms */
 
 /* Login */
 .login-body,
@@ -618,6 +659,10 @@ form .btn[type="submit"]:hover {
     margin-bottom: 1.8rem;
 }
 
+.add-commodity--body {
+    width: 100%;
+}
+
 .register--body {
     width: 100%;
     max-width: 850px;
@@ -630,19 +675,6 @@ form .btn[type="submit"]:hover {
     border-bottom: 1px solid var(--color-blue);
 }
 
-.register .form--input-line input,
-.register .form--input-line label {
-    margin-bottom: 0;
-}
-
-.register .form--input-line input {
-    color: var(--color-blue-dark);
-    margin-top: 0;
-}
-
-.register .form--input-line label {
-    color: var(--color-blue);
-}
 
 .register .radio .form-check-input[type=radio] {
     border-color: var(--color-blue);
@@ -650,10 +682,6 @@ form .btn[type="submit"]:hover {
 
 .register .radio .form-check-label {
     color: var(--color-blue-dark);
-}
-
-.register .date .form--input-line input {
-    background: #ffffff6e;
 }
 
 .register .btn {
@@ -682,6 +710,47 @@ form .btn[type="submit"]:hover {
     }
 }
 /* Register */
+
+/* Add Commodity */
+.add-commodity--body {
+    width: 100%;
+    max-width: 850px;
+    padding: 0.5rem;
+    background: whitesmoke;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.add-commodity .form--control-lead {
+    border: 0;
+    border-bottom: 1px solid var(--color-blue);
+}
+
+.add-commodity .control-lead-icon {
+    background: var(--color-blue);
+    padding: 0.1rem;
+    width: 2.8rem;
+    height: 2.8rem;
+    margin-left: 0;
+}
+
+.add-commodity .control-lead-text {
+    background: transparent;
+    color: var(--color-blue);
+    padding: 0;
+    font-size: 1.1rem;
+    font-weight: bolder;
+}
+
+
+.add-commodity .form--input-line label {
+    color: var(--color-blue-dark);
+}
+
+.add-commodity .form--input-line input {
+    border: 1px solid var(--color-blue);
+}
+/* Add Commodity */
 /* Grids */
 .grid {
     display: grid;
@@ -1115,5 +1184,5 @@ form .btn[type="submit"]:hover {
 
 /* Footer */
 .pps-footer {
-    border-top: 5px solid var(--color-blue);
+    border-top: 3px solid var(--color-blue);
 }
