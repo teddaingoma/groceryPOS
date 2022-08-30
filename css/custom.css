@@ -442,6 +442,26 @@ a {
     margin: 1rem 0;
 }
 
+.form--header {
+    background: var(--color-blue);
+    color: var(--color-white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem 0;
+}
+
+.form--brand {
+    width: 15rem;
+}
+
+.form--title {
+    color: var(--color-white);
+    text-transform: uppercase;
+    margin: 0;
+    text-align: center;
+}
+
 .form--control-lead {
     border: 1px solid var(--color-blue);
     display: flex;
@@ -480,6 +500,25 @@ a {
     padding: 0.5rem;
     display: flex;
     flex-direction: column;
+}
+
+form .btn {
+    width: 100%;
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+    font-weight: 350;
+    line-height: 1.2;
+    font-size: 1.1rem;
+}
+
+form .btn[type="submit"] {
+    background: var(--color-success);
+    border-color: var(--color-success);
+}
+
+form .btn[type="submit"]:hover {
+    background-color: #0b4e0b;
+    color: var(--color-white);
 }
 
 /* Fomrs */
@@ -541,28 +580,6 @@ a {
     color: var(--color-blue-dark);
 }
 
-.login--form .btn, 
-.register .btn {
-    width: 100%;
-    margin-top: 0.25rem;
-    margin-bottom: 0.25rem;
-    font-weight: 350;
-    line-height: 1.2;
-    font-size: 1.1rem;
-}
-
-.login--form .btn[type="submit"],
-.register .btn[type="submit"] {
-    background: var(--color-success);
-    border-color: var(--color-success);
-}
-
-.login--form .btn[type="submit"]:hover,
-.register .btn[type="submit"]:hover {
-    background-color: #0b4e0b;
-    color: var(--color-white);
-}
-
 .pps-footer.login,
 .pps-footer.register {
     margin-top: 1rem;
@@ -599,25 +616,6 @@ a {
 /* Register */
 .register-form form {
     margin-bottom: 1.8rem;
-}
-.register--header {
-    background: var(--color-blue);
-    color: var(--color-white);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0.5rem 0;
-}
-
-.register--brand {
-    width: 15rem;
-}
-
-.register--title {
-    color: var(--color-white);
-    text-transform: uppercase;
-    margin: 0;
-    text-align: center;
 }
 
 .register--body {
