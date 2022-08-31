@@ -841,6 +841,26 @@ form .btn[type="submit"]:hover {
     color: var(--color-blue);
 }
 
+.pps-primary-navbar .navbar-nav.pps-main-nav {
+    align-items: center;
+}
+
+.pps-primary-navbar .show .navbar-nav.pps-main-nav {
+    align-items: start;
+}
+
+.pps-primary-navbar .navbar-nav .nav-item.item-icon,
+.pps-primary-navbar .user .nav-item.dropdown .dropdown-item.item-icon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.pps-primary-navbar .user .nav-item.dropdown .dropdown-item.item-icon .nav-link {
+    padding: 0;
+    padding-left: 0.2rem;
+}
+
 .pps-primary-navbar .icon--circle:hover {
     background: var(--color-blue-faded);
 }
