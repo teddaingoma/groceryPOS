@@ -1,0 +1,23 @@
+{
+  "name": "FYP-Design",
+  "version": "1.0.0",
+  "description": "Grocery POS system FYP",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/teddaingoma/groceryPOS.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/teddaingoma/groceryPOS/issues"
+  },
+  "homepage": "https://github.com/teddaingoma/groceryPOS#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5"
+  }
+}
