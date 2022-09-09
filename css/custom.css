@@ -152,16 +152,6 @@ a {
     color: #000;
 }
 
-.btn--edition {
-   color: #5D4D03;
-   background-color: #ffc107;
-   border-color: #ffc107;
-}
-
-.btn--edition:hover {
-    color: #251f00;
-}
-
 .btn--delete {
     color: #ff0000;
     border-color: #ff0000;
@@ -170,38 +160,6 @@ a {
 .btn--delete:hover {
     background: #ff00008a;
     border-color: #ff00008a;
-}
-
-.btn--search {
-    border: 1px solid var(--color-secondary);
-}
-
-.btn--search:hover {
-    background: #212529;
-    border-color: #212529; 
-}
-
-.btn--dropdown {
-    white-space: nowrap;
-    display: inline-flex;
-    justify-content: center;
-    box-shadow: 2px 2px 4px #000000;
-    background: var(--color-primary);
-    color: var(--color-secondary);
-    border: 1px solid var(--color-secondary);
-}
-
-.btn--dropdown .icon {
-    fill: var(--color-secondary);
-}
-
-.btn--dropdown .icon:hover {
-    fill: var(--color-primary);
-}
-
-.btn--dropdown:hover {
-    background: var(--color-secondary);
-    color: var(--color-primary);
 }
 
 .btn--group {
@@ -249,8 +207,13 @@ a {
     padding: 0 1rem;
 }
 
-.card__body {
-    padding: 0.5rem 1rem 1.2rem;
+.card__body,
+.card__btn {
+    padding: 0.5rem 1rem;
+}
+
+.card__btn {
+    background: var(--color-accent-light);
 }
 
 .card__footer {
@@ -761,7 +724,7 @@ form .btn[type="submit"]:hover {
 .flex-col--wrap {
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: start;
 }
 
 @media screen and (min-width: 520px) {
@@ -808,11 +771,6 @@ form .btn[type="submit"]:hover {
     }
 }
 
-@media screen and (min-width: 1300px) {
-    .flex-col--wrap .commodity{
-        width: 24%;
-    }
-}
 
 /* Components */
 
@@ -830,6 +788,18 @@ form .btn[type="submit"]:hover {
 
 .pps-primary-navbar .show .navbar-nav.pps-main-nav {
     align-items: start;
+}
+
+.pps-primary-navbar .navbar-toggler {
+    border-width: 2px;
+    border-color: var(--color-blue);
+    opacity: 0.7;
+    padding: 0.1rem 0.4rem;
+    transition: all 0.3s ease-in;
+}
+
+.pps-primary-navbar .navbar-toggler:hover {
+    opacity: 1;
 }
 
 .pps-primary-navbar .navbar-nav .nav-item.item-icon,
@@ -1084,11 +1054,12 @@ form .btn[type="submit"]:hover {
 .commodity__name {
     margin: 0;
     font-weight: 400;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     margin: 0 0.5rem;
     white-space: nowrap;
-    overflow: auto;
-    text-overflow: clip;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color:  var(--color-white);
 }
 
 .commodity__tags {
@@ -1101,10 +1072,15 @@ form .btn[type="submit"]:hover {
     font-size: 2.8rem;
 }
 
-.commodity__currency {
+.commodity__currency,
+.commodity__unit {
     font-size: 1.5rem;
     font-weight: 300;
     color:  #e6e6e680;
+}
+
+.commodity__unit {
+    font-size: 1.2rem;
 }
 
 .commodity__description {
@@ -1114,8 +1090,42 @@ form .btn[type="submit"]:hover {
     display: block;
 }
 
+.commodity .card .card__footer {
+    padding: 0.3rem 0;
+}
+
+.commodity .card .btn--group {
+    flex-wrap: nowrap;
+}
+
+.commodity .card .btn--group .btn{
+    margin: 0 0.2rem;
+}
+
 .commodity .card .card__footer .btn {
     border-radius: 0;
+    padding: 0.3rem;
+    line-height: 1;
+    border-radius: 5px;
+    opacity: 0.7;
+    transition: all 0.3s ease-out;
+}
+
+.commodity .card .card__footer .btn:hover {
+    opacity: 1;
+}
+
+.commodity .card .card__footer .btn .btn__text {
+    font-size: 1.1rem;
+}
+
+.commodity .card .card__footer .icon--small {
+    padding: 0;
+}
+
+.commodity .card .card__btn .btn {
+    border-radius: 0;
+    padding: 0.2rem 0.5rem;
 }
 
 @media screen and (min-width: 601px) {

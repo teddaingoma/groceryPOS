@@ -14,7 +14,7 @@
     <meta property="og:url" content="https://pps.com">
 
     <!-- Bootstrap core CSS -->
-    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
     <link href="css/custom.css" rel="stylesheet">
@@ -26,7 +26,7 @@
 <body>
     <div class="container-fluid px-0 pps-header">
         <header>
-            <nav class="navbar navbar-expand-lg navbar-light bg-light pps-primary-navbar" aria-label="Primary Nav bar">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-light pps-primary-navbar" aria-label="Primary Nav bar">
                 <div class="container-fluid">
                   <a class="navbar-brand" href="home.html">
                     <span class="icon--circle">
@@ -34,13 +34,15 @@
                     </span>
                   </a>
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#ppsPrimaryNavbar" aria-controls="ppsPrimaryNavbar" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                    <span class="icon-container">
+                      <img class="icon" src="images/menu-dark.ico" alt="">
+                    </span>
                   </button>
                   <div class="collapse navbar-collapse" id="ppsPrimaryNavbar">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 pps-main-nav">
                       <li class="nav-item item-icon">
                         <span class="icon--circle">
-                          <img class="icon" src="/images/home-dark.ico" alt="">
+                          <img class="icon" src="images/home-dark.ico" alt="">
                         </span>
                         <a class="nav-link" href="#">Home</a>
                       </li>
@@ -296,29 +298,59 @@
                         <div class="card">
                             <header class="card__header">
                                 <div class="commodity__icon">
-                                    <img class="icon" src="images/image1.jpg" alt="">
+                                    <img class="icon" src="images/item-light.ico" alt="">
                                     <h3 class="commodity__name">Name right here Lorem ipsum dolor sit amet consectetur adipisicing.</h3>
                                 </div>
                                 <div class="commodity__tags">
                                     <span class="commodity__price">
                                       <span class="commodity__currency">MWK</span>
-                                      100.00
+                                      <span class="commodity__amount">100.00</span>
+                                      <span class="commodity__unit"> /Packet</span>
                                     </span>
                                     <span class="commodity__description">Thats our commodity</span>
                                 </div>
                             </header>
                             <div class="card__body">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, quisquam!
-                            </div>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, quisquam!                               
+                              </div>
+                              <div class="card__btn">
+                                <button class="btn btn--primary btn--icon btn--outline">
+                                    <span class="icon-container icon--small">
+                                        <img class="icon" src="images/play.ico" alt="">
+                                    </span>
+                                    <span class="btn__text">view</span>
+                                </button>
+                              </div>
                             <footer class="card__footer">
-                                <small class="text-muted">
-                                    <button class="btn btn--primary btn--icon btn--outline">
-                                        <span class="icon-container icon--small">
-                                            <img class="icon" src="images/play.ico" alt="">
-                                        </span>
-                                        <span class="btn__text">view</span>
-                                    </button>
-                                </small>
+                              
+                              
+
+                              <div class="btn--group">
+                                <button class="btn btn--edit btn--icon">
+                                    <span class="icon-container icon--small">
+                                        <img class="icon" src="images/play.ico" alt="">
+                                    </span>
+                                    <span class="btn__text">edit</span>
+                                </button>
+                                <button class="btn btn--category btn--icon">
+                                    <span class="icon-container icon--small">
+                                        <img class="icon" src="images/play.ico" alt="">
+                                    </span>
+                                    <span class="btn__text">category</span>
+                                </button>
+                              </div>
+                              <div class="card__divider"></div>
+                              <div class="btn--group">
+                                  <button class="btn btn--delete btn--icon btn--outline">
+                                      <span class="icon-container icon--small">
+                                          <img class="icon" src="images/play.ico" alt="">
+                                      </span>
+                                      <span class="btn__text">delete</span>
+                                  </button>
+                              </div>
+
+
+
                             </footer>
                         </div>
                     </div>
@@ -326,29 +358,59 @@
                       <div class="card">
                           <header class="card__header">
                               <div class="commodity__icon">
-                                  <img class="icon" src="images/image1.jpg" alt="">
-                                  <h3 class="commodity__name">Name right here</h3>
+                                  <img class="icon" src="images/item-light.ico" alt="">
+                                  <h3 class="commodity__name">Name right here Lorem ipsum dolor sit amet consectetur adipisicing.</h3>
                               </div>
                               <div class="commodity__tags">
                                   <span class="commodity__price">
                                     <span class="commodity__currency">MWK</span>
-                                    100.00
+                                    <span class="commodity__amount">100.00</span>
+                                    <span class="commodity__unit"> /Packet</span>
                                   </span>
                                   <span class="commodity__description">Thats our commodity</span>
                               </div>
                           </header>
                           <div class="card__body">
-                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, quisquam!
-                          </div>
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, quisquam!                               
+                            </div>
+                            <div class="card__btn">
+                              <button class="btn btn--primary btn--icon btn--outline">
+                                  <span class="icon-container icon--small">
+                                      <img class="icon" src="images/play.ico" alt="">
+                                  </span>
+                                  <span class="btn__text">view</span>
+                              </button>
+                            </div>
                           <footer class="card__footer">
-                              <small class="text-muted">
-                                  <button class="btn btn--primary btn--icon btn--outline">
-                                      <span class="icon-container icon--small">
-                                          <img class="icon" src="images/play.ico" alt="">
-                                      </span>
-                                      <span class="btn__text">view</span>
-                                  </button>
-                              </small>
+                            
+                            
+
+                            <div class="btn--group">
+                              <button class="btn btn--edit btn--icon">
+                                  <span class="icon-container icon--small">
+                                      <img class="icon" src="images/play.ico" alt="">
+                                  </span>
+                                  <span class="btn__text">edit</span>
+                              </button>
+                              <button class="btn btn--category btn--icon">
+                                  <span class="icon-container icon--small">
+                                      <img class="icon" src="images/play.ico" alt="">
+                                  </span>
+                                  <span class="btn__text">category</span>
+                              </button>
+                            </div>
+                            <div class="card__divider"></div>
+                            <div class="btn--group">
+                                <button class="btn btn--delete btn--icon btn--outline">
+                                    <span class="icon-container icon--small">
+                                        <img class="icon" src="images/play.ico" alt="">
+                                    </span>
+                                    <span class="btn__text">delete</span>
+                                </button>
+                            </div>
+
+
+
                           </footer>
                       </div>
                     </div>
@@ -356,29 +418,59 @@
                       <div class="card">
                           <header class="card__header">
                               <div class="commodity__icon">
-                                  <img class="icon" src="images/image1.jpg" alt="">
-                                  <h3 class="commodity__name">Name right here</h3>
+                                  <img class="icon" src="images/item-light.ico" alt="">
+                                  <h3 class="commodity__name">Name right here Lorem ipsum dolor sit amet consectetur adipisicing.</h3>
                               </div>
                               <div class="commodity__tags">
                                   <span class="commodity__price">
                                     <span class="commodity__currency">MWK</span>
-                                    100.00
+                                    <span class="commodity__amount">100.00</span>
+                                    <span class="commodity__unit"> /Packet</span>
                                   </span>
                                   <span class="commodity__description">Thats our commodity</span>
                               </div>
                           </header>
                           <div class="card__body">
-                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, quisquam!
-                          </div>
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, quisquam!                               
+                            </div>
+                            <div class="card__btn">
+                              <button class="btn btn--primary btn--icon btn--outline">
+                                  <span class="icon-container icon--small">
+                                      <img class="icon" src="images/play.ico" alt="">
+                                  </span>
+                                  <span class="btn__text">view</span>
+                              </button>
+                            </div>
                           <footer class="card__footer">
-                              <small class="text-muted">
-                                  <button class="btn btn--primary btn--icon btn--outline">
-                                      <span class="icon-container icon--small">
-                                          <img class="icon" src="images/play.ico" alt="">
-                                      </span>
-                                      <span class="btn__text">view</span>
-                                  </button>
-                              </small>
+                            
+                            
+
+                            <div class="btn--group">
+                              <button class="btn btn--edit btn--icon">
+                                  <span class="icon-container icon--small">
+                                      <img class="icon" src="images/play.ico" alt="">
+                                  </span>
+                                  <span class="btn__text">edit</span>
+                              </button>
+                              <button class="btn btn--category btn--icon">
+                                  <span class="icon-container icon--small">
+                                      <img class="icon" src="images/play.ico" alt="">
+                                  </span>
+                                  <span class="btn__text">category</span>
+                              </button>
+                            </div>
+                            <div class="card__divider"></div>
+                            <div class="btn--group">
+                                <button class="btn btn--delete btn--icon btn--outline">
+                                    <span class="icon-container icon--small">
+                                        <img class="icon" src="images/play.ico" alt="">
+                                    </span>
+                                    <span class="btn__text">delete</span>
+                                </button>
+                            </div>
+
+
+
                           </footer>
                       </div>
                     </div>
@@ -386,29 +478,59 @@
                       <div class="card">
                           <header class="card__header">
                               <div class="commodity__icon">
-                                  <img class="icon" src="images/image1.jpg" alt="">
-                                  <h3 class="commodity__name">Name right here</h3>
+                                  <img class="icon" src="images/item-light.ico" alt="">
+                                  <h3 class="commodity__name">Name right here Lorem ipsum dolor sit amet consectetur adipisicing.</h3>
                               </div>
                               <div class="commodity__tags">
                                   <span class="commodity__price">
                                     <span class="commodity__currency">MWK</span>
-                                    100.00
+                                    <span class="commodity__amount">100.00</span>
+                                    <span class="commodity__unit"> /Packet</span>
                                   </span>
                                   <span class="commodity__description">Thats our commodity</span>
                               </div>
                           </header>
                           <div class="card__body">
-                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, quisquam!
-                          </div>
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, quisquam!                               
+                            </div>
+                            <div class="card__btn">
+                              <button class="btn btn--primary btn--icon btn--outline">
+                                  <span class="icon-container icon--small">
+                                      <img class="icon" src="images/play.ico" alt="">
+                                  </span>
+                                  <span class="btn__text">view</span>
+                              </button>
+                            </div>
                           <footer class="card__footer">
-                              <small class="text-muted">
-                                  <button class="btn btn--primary btn--icon btn--outline">
-                                      <span class="icon-container icon--small">
-                                          <img class="icon" src="images/play.ico" alt="">
-                                      </span>
-                                      <span class="btn__text">view</span>
-                                  </button>
-                              </small>
+                            
+                            
+
+                            <div class="btn--group">
+                              <button class="btn btn--edit btn--icon">
+                                  <span class="icon-container icon--small">
+                                      <img class="icon" src="images/play.ico" alt="">
+                                  </span>
+                                  <span class="btn__text">edit</span>
+                              </button>
+                              <button class="btn btn--category btn--icon">
+                                  <span class="icon-container icon--small">
+                                      <img class="icon" src="images/play.ico" alt="">
+                                  </span>
+                                  <span class="btn__text">category</span>
+                              </button>
+                            </div>
+                            <div class="card__divider"></div>
+                            <div class="btn--group">
+                                <button class="btn btn--delete btn--icon btn--outline">
+                                    <span class="icon-container icon--small">
+                                        <img class="icon" src="images/play.ico" alt="">
+                                    </span>
+                                    <span class="btn__text">delete</span>
+                                </button>
+                            </div>
+
+
+
                           </footer>
                       </div>
                     </div>
@@ -437,7 +559,7 @@
             <section class="collapsible collapsible--expanded footer__section">
                 <header class="collapsible__header">
                     <h2 class="collapsible__heading footer__heading">Products</h2>
-                    <img src="/images/chevron.svg" alt="" class="icon icon--white collapsible__chevron">
+                    <img src="images/chevron.svg" alt="" class="icon icon--white collapsible__chevron">
                 </header>
                 <div class="collapsible__content">
                     <ul class="list">
@@ -450,7 +572,7 @@
             <section class="collapsible footer__section">
                 <header class="collapsible__header">
                     <h2 class="collapsible__heading footer__heading">Company</h2>
-                    <img src="/images/chevron.svg" alt="" class="icon icon--white collapsible__chevron">
+                    <img src="images/chevron.svg" alt="" class="icon icon--white collapsible__chevron">
                 </header>
                 <div class="collapsible__content">
                     <ul class="list">
@@ -463,7 +585,7 @@
             <section class="collapsible footer__section">
                 <header class="collapsible__header">
                     <h2 class="collapsible__heading footer__heading">Support</h2>
-                    <img src="/images/chevron.svg" alt="" class="icon icon--white collapsible__chevron">
+                    <img src="images/chevron.svg" alt="" class="icon icon--white collapsible__chevron">
                 </header>
                 <div class="collapsible__content">
                     <ul class="list">
@@ -476,7 +598,7 @@
             <section class="collapsible footer__section">
                 <header class="collapsible__header">
                     <h2 class="collapsible__heading footer__heading">Domains</h2>
-                    <img src="/images/chevron.svg" alt="" class="icon icon--white collapsible__chevron">
+                    <img src="images/chevron.svg" alt="" class="icon icon--white collapsible__chevron">
                 </header>
                 <div class="collapsible__content">
                     <ul class="list">
@@ -487,7 +609,7 @@
                 </div>
             </section>
             <section class="footer__brand">
-                <img src="/images/logo-light.ico" alt="">
+                <img src="images/logo-light.ico" alt="">
                 <p class="footer__copyright">
                     Copyright 2022 Grocery POS system
                 </p>
