@@ -26,7 +26,7 @@
 <body>
     <div class="container-fluid px-0 pps-header">
         <header>
-            <nav class="navbar navbar-expand-lg navbar-dark bg-light pps-primary-navbar" aria-label="Primary Nav bar">
+            <nav class="navbar navbar-expand-lg bg-light pps-primary-navbar" aria-label="Primary Nav bar">
                 <div class="container-fluid">
                   <a class="navbar-brand" href="home.html">
                     <span class="icon--circle">
@@ -322,35 +322,50 @@
                                 </button>
                               </div>
                             <footer class="card__footer">
-                              
-                              
-
                               <div class="btn--group">
                                 <button class="btn btn--edit btn--icon">
                                     <span class="icon-container icon--small">
-                                        <img class="icon" src="images/play.ico" alt="">
+                                        <img class="icon" src="images/edit-filled.ico" alt="">
                                     </span>
                                     <span class="btn__text">edit</span>
                                 </button>
                                 <button class="btn btn--category btn--icon">
                                     <span class="icon-container icon--small">
-                                        <img class="icon" src="images/play.ico" alt="">
+                                        <img class="icon" src="images/category-dark.ico" alt="">
                                     </span>
                                     <span class="btn__text">category</span>
                                 </button>
                               </div>
                               <div class="card__divider"></div>
                               <div class="btn--group">
-                                  <button class="btn btn--delete btn--icon btn--outline">
+                                  <button class="btn btn--delete btn--icon btn--outline" data-bs-toggle="modal" data-bs-target="#commodityDeleteModal">
                                       <span class="icon-container icon--small">
-                                          <img class="icon" src="images/play.ico" alt="">
+                                          <img class="icon" src="images/del-dark.ico" alt="">
                                       </span>
                                       <span class="btn__text">delete</span>
                                   </button>
+
+                                  <div class="modal fade" id="commodityDeleteModal" data-bs-backdrop="static" tabindex="-1" role="dialog" data-bs-keyboard="false" aria-labelledby="WarningToDelete" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">Make the choice, Brov</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <h5>Are You Sure?</h5>
+                                                <div class="container-fluid">
+                                                    You Sure Though, dawg?
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                                                <button type="button" class="btn btn-danger">Delete</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                  </div>
                               </div>
-
-
-
                             </footer>
                         </div>
                     </div>
