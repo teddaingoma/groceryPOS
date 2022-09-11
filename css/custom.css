@@ -818,13 +818,29 @@ form .btn[type="submit"]:hover {
 }
 
 .pps-primary-navbar .navbar-nav .nav-item.item-icon,
-.pps-primary-navbar .user .nav-item.dropdown .dropdown-item.item-icon {
+.pps-primary-navbar .user .nav-item.dropdown .dropdown-item.item-icon,
+.pps-sidebar .pps-sidebar__nav .dropdown .dropdown-item.item-icon {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
-.pps-primary-navbar .user .nav-item.dropdown .dropdown-item.item-icon .nav-link {
+.pps-sidebar .pps-sidebar__nav .dropdown .dropdown-item.item-icon.username .icon--circle {
+    background: var(--color-white);
+    border: 1px solid var(--color-blue);
+}
+
+.pps-sidebar .pps-sidebar__nav .dropdown .dropdown-item.item-icon.username {
+    flex-direction: column;
+}
+
+.pps-sidebar .pps-sidebar__nav .dropdown .dropdown-item.item-icon {
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+}
+
+.pps-primary-navbar .user .nav-item.dropdown .dropdown-item.item-icon .nav-link,
+.pps-sidebar .pps-sidebar__nav .dropdown .dropdown-item.item-icon .nav-link {
     padding: 0;
     padding-left: 0.2rem;
 }
@@ -899,12 +915,19 @@ form .btn[type="submit"]:hover {
 .pps-sidebar hr,
 .pps-sidebar-icon hr {
     color: var(--color-blue);
-    height: 1.8px;
+    height: 2px;
+    margin: 0.5rem 0 0.2rem;
 }
 
 .pps-sidebar-title {
-    color: var(--color-blue);
     font-weight: 600;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.pps-sidebar-title span {
+    color: var(--color-blue);
 }
 
 .pps-sidebar-icon-title {
@@ -921,16 +944,12 @@ form .btn[type="submit"]:hover {
 
 
 .pps-sidebar .nav-item:hover {
-    background: var(--color-blue);
+    background: var(--color-blue-faded);
 }
 
 .pps-sidebar-icon .nav-item:hover,
 .pps-sidebar-icon .dropdown:hover {
     background: var(--color-blue-faded);
-}
-
-.pps-sidebar .nav-link:hover {
-    color: var(--color-white);;
 }
 
 .pps-sidebar .icon--small {
@@ -1195,6 +1214,10 @@ span[class="commodity__category"]:first-child {
     margin: 0 0.2rem;
 }
 
+.commodity .card .btn--group .btn:hover{
+    box-shadow: 0px 2px 4px 1px #00313d;
+}
+
 .commodity .card .card__footer .btn {
     border-radius: 0;
     padding: 0.3rem;
@@ -1222,7 +1245,7 @@ span[class="commodity__category"]:first-child {
     color: var(--color-white);
     border-radius: 0;
     padding: 0.2rem 0.5rem;
-    box-shadow: 0px 2px 6px #00313d;
+    box-shadow: 0px 2px 4px 1px #00313d;
 }
 
 .commodity .card .card__btn .btn--img:hover {
