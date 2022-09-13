@@ -1097,18 +1097,26 @@ form .btn[type="submit"]:hover {
 }
 
 .commodity__tags {
-    padding: 0 1rem 1rem;
+    padding: 0 0.6rem 0.6rem;
+    text-align: center;
 }
 
 .commodity__price {
     display: flex;
-    align-items: baseline;
-    font-size: 2.8rem;
+    align-items: center;
+    flex-direction: column;
+    font-size: 2rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.commodity__price span {
+    line-height: 1;
 }
 
 .commodity__currency,
 .commodity__unit {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 300;
     color:  #e6e6e680;
 }
@@ -1288,6 +1296,38 @@ span[class="commodity__category"]:first-child {
     background: #be0b1d;
 }
 
+@media screen and (min-width: 360px) and (max-width: 599px) {
+
+    .pps-commodities .flex-col--wrap .commodity__tags {
+        text-align: start;
+    }
+
+    .pps-commodities .flex-col--wrap .commodity__price {
+        flex-direction: row;
+        align-items: baseline;
+    }
+
+    .pps-commodities .flex-col--wrap .commodity__amount {
+        margin: 0 0.2rem;
+    }
+}
+
+@media screen and (min-width: 800px) and (max-width: 919px) {
+
+    .pps-commodities .flex-col--wrap .commodity__tags {
+        text-align: start;
+    }
+
+    .pps-commodities .flex-col--wrap .commodity__price {
+        flex-direction: row;
+        align-items: baseline;
+    }
+
+    .pps-commodities .flex-col--wrap .commodity__amount {
+        margin: 0 0.2rem;
+    }
+}
+
 @media screen and (min-width: 601px) {
     .pps-commodities .flex-col--wrap .commodity__price {
         font-size: 1.8rem;
@@ -1306,9 +1346,6 @@ span[class="commodity__category"]:first-child {
 }
 
 @media screen and (min-width: 700px) {
-    .pps-commodities .flex-col--wrap .commodity__price {
-        font-size: 2.2rem;
-    }
 
     .pps-commodities .flex-col--wrap .commodity__name,
     .pps-commodities .flex-col--wrap .commodity__currency,
@@ -1331,11 +1368,6 @@ span[class="commodity__category"]:first-child {
 }
 
 @media screen and (min-width: 920px) {
-    .pps-commodities .flex-col--wrap .commodity__price {
-        font-size: 2.3rem;
-        flex-wrap: wrap;
-    }
-
     .pps-commodities .flex-col--wrap .commodity__currency,
     .pps-commodities .flex-col--wrap .commodity__description {
         font-size: 0.8rem;
@@ -1350,6 +1382,22 @@ span[class="commodity__category"]:first-child {
     .pps-commodities .flex-col--wrap .commodity__currency,
     .pps-commodities .flex-col--wrap .commodity__description {
         font-size: 1.1rem;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
+    .pps-commodities .flex-col--wrap .commodity__tags {
+        text-align: start;
+    }
+
+    .pps-commodities .flex-col--wrap .commodity__price {
+        flex-direction: row;
+        align-items: baseline;
+    }
+
+    .pps-commodities .flex-col--wrap .commodity__amount {
+        margin: 0 0.2rem;
     }
 }
 
