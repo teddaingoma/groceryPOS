@@ -35,6 +35,7 @@
 
 body {
     background: var(--color-white);
+    padding-top: 4.5rem;
 }
 
 h1, h2, h3, h4 {
