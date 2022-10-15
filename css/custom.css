@@ -35,7 +35,7 @@
 
 body {
     background: var(--color-white);
-    padding-top: 4.5rem;
+    padding-top: 3.7rem;
 }
 
 h1, h2, h3, h4 {
@@ -889,12 +889,23 @@ form .btn[type="submit"]:hover {
 /* Aside / Sidebar */
 .pps-menu-bar {
     background: var(--color-blue);
+    color: var(--color-white);
     padding: 0.2rem;
 }
 
 .pps-menu-bar .btn {
     padding: 0.2rem 0.5rem;
     line-height: 1;
+}
+
+.pps-menu-bar .btn .icon--circle {
+    border: 1px solid var(--color-white);
+    border-radius: 0;
+    background: var(--color-blue);
+}
+
+.pps-menu-bar .btn .btn__text {
+    color: var(--color-white);
 }
 
 .pps-menu-bar .btn.btn--outline {
@@ -1148,6 +1159,7 @@ form .btn[type="submit"]:hover {
     margin-bottom: 0.5rem;
 }
 
+
 .commodity__price span {
     line-height: 1;
 }
@@ -1157,6 +1169,20 @@ form .btn[type="submit"]:hover {
     font-size: 1.2rem;
     font-weight: 300;
     color:  #e6e6e680;
+}
+
+.commodity .card .empty {
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin-right: 0.5rem;
+}
+
+.commodity .card .empty .btn {
+    padding: 0;
+}
+
+.commodity .card .empty .btn:hover {
+    opacity: 0.8;
 }
 
 .commodity__unit {
@@ -1179,6 +1205,11 @@ form .btn[type="submit"]:hover {
     padding-bottom: 0.2rem;
     flex-direction: row;
     border-bottom: 1px solid var(--color-blue-faded);
+}
+
+.acquisition-date.empty {
+    padding: 0;
+    background: transparent;
 }
 
 .quantity-text,
