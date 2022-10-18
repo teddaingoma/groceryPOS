@@ -1117,6 +1117,19 @@ form .btn[type="submit"]:hover {
 .commodity {
     width: 100%;
 }
+
+.scrollable-list {
+    max-height: 100vh;
+    white-space: nowrap;
+    overflow-y: scroll;
+}
+
+@media screen and (min-width: 601px){
+    .scrollable-list {
+        max-height: 90vh;
+    }
+}
+
 .commodity .card__header {
     background: var(--color-blue);
     color: var(--color-white);
@@ -1139,9 +1152,6 @@ form .btn[type="submit"]:hover {
     font-weight: 400;
     font-size: 1.3rem;
     margin: 0 0.5rem;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
     color:  var(--color-white);
 }
 
@@ -1198,7 +1208,8 @@ form .btn[type="submit"]:hover {
 
 .commodity__quantity,
 .commodity__acquisition-date,
-.commodity__category {
+.commodity__category,
+.commodity__type {
     color: var(--color-blue);
     display: flex;
     padding-top: 0.2rem;
@@ -1214,7 +1225,8 @@ form .btn[type="submit"]:hover {
 
 .quantity-text,
 .acquisition-text,
-.category-text {
+.category-text,
+.type-text {
     font-weight: 400;
 }
 
@@ -1226,7 +1238,8 @@ form .btn[type="submit"]:hover {
 
 .quantity-value,
 .acquisition-date,
-.category-value {
+.category-value,
+.type-value {
     background: var(--color-blue-faded);
     padding: 0.35rem 0.5rem;
     margin-left: 0.2rem; 
@@ -1243,9 +1256,9 @@ form .btn[type="submit"]:hover {
     padding: 0 0.35rem;
 }
 
-.commodity__category {
+.commodity__category,
+.commodity__type {
     border: 0;
-    border-top: 2px solid var(--color-blue-dark);
     color: var(--color-blue-dark);
     display: flex;
     flex-direction: row;
@@ -1254,29 +1267,47 @@ form .btn[type="submit"]:hover {
 }
 
 .category-text,
-.category-value {
-    margin-top: 0.1rem;
-    margin-bottom: 0.1rem;
-}
-
-.category-text {
+.type-text {
     background: var(--color-blue-dark);
     color: var(--color-white);
     padding: 0.1rem 0.3rem;
     font-weight: 600;
 }
 
-.category-value {
+.category-values,
+.type-values {
+    border: 0.5px solid var(--color-blue-faded);
+    border-top: 2px solid var(--color-blue-dark);
+    display: block;
+}
+
+.category-value,
+.type-value {
     border: 1px solid var(--color-blue-dark);
     color: var(--color-blue-dark);
     background: transparent;
-    border-radius: 0;
+    border-radius: 20px;
     font-weight: 400;
     opacity: 0.7;
+    margin-top: 0.1rem;
+    margin-bottom: 0.1rem;
+}
+
+.type-values a[class="link"] .type-value:hover {
+    background: var(--color-blue-faded);
 }
 
 span[class="commodity__category"]:first-child {
     border-top-left-radius: 25px;
+}
+
+.flex-col--wrap .commodity__name,
+.flex-col--wrap .category-values,
+.flex-col--wrap .type-values,
+.flex-col--wrap .commodity__description {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .commodity .card .card__footer {
@@ -1367,48 +1398,48 @@ span[class="commodity__category"]:first-child {
 
 @media screen and (min-width: 360px) and (max-width: 599px) {
 
-    .pps-commodities .flex-col--wrap .commodity__tags {
+    .commodity .card .commodity__tags {
         text-align: start;
     }
 
-    .pps-commodities .flex-col--wrap .commodity__price {
+    .commodity .card .commodity__price {
         flex-direction: row;
         align-items: baseline;
     }
 
-    .pps-commodities .flex-col--wrap .commodity__amount {
+    .commodity .card .commodity__amount {
         margin: 0 0.2rem;
     }
 }
 
 @media screen and (min-width: 800px) and (max-width: 919px) {
 
-    .pps-commodities .flex-col--wrap .commodity__tags {
+    .commodity .card .commodity__tags {
         text-align: start;
     }
 
-    .pps-commodities .flex-col--wrap .commodity__price {
+    .commodity .card .commodity__price {
         flex-direction: row;
         align-items: baseline;
     }
 
-    .pps-commodities .flex-col--wrap .commodity__amount {
+    .commodity .card .commodity__amount {
         margin: 0 0.2rem;
     }
 }
 
 @media screen and (min-width: 601px) {
-    .pps-commodities .flex-col--wrap .commodity__price {
+    .commodity .card .commodity__price {
         font-size: 1.8rem;
     }
 
-    .pps-commodities .flex-col--wrap .commodity__icon .icon {
+    .commodity .card .commodity__icon .icon {
         width: 3rem;
         height: 3rem;
     }
-    .pps-commodities .flex-col--wrap .commodity__name,
-    .pps-commodities .flex-col--wrap .commodity__currency,
-    .pps-commodities .flex-col--wrap .commodity__description {
+    .commodity .card .commodity__name,
+    .commodity .card .commodity__currency,
+    .commodity .card .commodity__description {
         font-size: 0.8rem;
     }
 
@@ -1416,56 +1447,56 @@ span[class="commodity__category"]:first-child {
 
 @media screen and (min-width: 700px) {
 
-    .pps-commodities .flex-col--wrap .commodity__name,
-    .pps-commodities .flex-col--wrap .commodity__currency,
-    .pps-commodities .flex-col--wrap .commodity__description {
+    .commodity .card .commodity__name,
+    .commodity .card .commodity__currency,
+    .commodity .card .commodity__description {
         font-size: 1rem;
     }
 
 }
 
 @media screen and (min-width: 820px) {
-    .pps-commodities .flex-col--wrap .commodity__name {
+    .commodity .card .commodity__name {
         font-size: 1.2rem;
     }
 }
 
 @media screen and (min-width: 901px) {
-    .pps-commodities .flex-col--wrap .commodity__name {
+    .commodity .card .commodity__name {
         font-size: 1rem;
     }
 }
 
 @media screen and (min-width: 920px) {
-    .pps-commodities .flex-col--wrap .commodity__currency,
-    .pps-commodities .flex-col--wrap .commodity__description {
+    .commodity .card .commodity__currency,
+    .commodity .card .commodity__description {
         font-size: 0.8rem;
     }
 }
 
 @media screen and (min-width: 1100px) {
-    .pps-commodities .flex-col--wrap .commodity__name {
+    .commodity .card .commodity__name {
         font-size: 1.2rem;
     }
 
-    .pps-commodities .flex-col--wrap .commodity__currency,
-    .pps-commodities .flex-col--wrap .commodity__description {
+    .commodity .card .commodity__currency,
+    .commodity .card .commodity__description {
         font-size: 1.1rem;
     }
 }
 
 @media screen and (min-width: 1200px) {
 
-    .pps-commodities .flex-col--wrap .commodity__tags {
+    .commodity .card .commodity__tags {
         text-align: start;
     }
 
-    .pps-commodities .flex-col--wrap .commodity__price {
+    .commodity .card .commodity__price {
         flex-direction: row;
         align-items: baseline;
     }
 
-    .pps-commodities .flex-col--wrap .commodity__amount {
+    .commodity .card .commodity__amount {
         margin: 0 0.2rem;
     }
 }
