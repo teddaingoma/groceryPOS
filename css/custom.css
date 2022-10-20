@@ -674,13 +674,25 @@ form .btn[type="submit"]:hover {
 /* Register */
 
 /* Add Commodity */
-.add-commodity--body {
+/* .add-commodity--body {
     width: 100%;
     max-width: 850px;
     padding: 0.5rem;
     background: whitesmoke;
     margin-left: auto;
     margin-right: auto;
+} */
+
+.add-commodity-body .pps-sidebar,
+.add-commodity-body .pps-sidebar-icon {
+    background: var(--color-blue);
+    border-right-color: var(--color-white);
+}
+
+.pps-main-content .add-commodity--body {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    background: whitesmoke;
 }
 
 .add-commodity .form--control-lead {
