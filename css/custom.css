@@ -518,6 +518,24 @@ form .btn[type="submit"]:hover {
     max-width: 330px;
 }
 
+.no-view {
+    opacity: 0;
+}
+
+@media screen and (min-width: 500px) {
+    .form--btn-group {
+        flex-direction: row;
+        justify-content: start;
+    }
+
+    .form--btn-group .btn {
+        max-width: 235px;
+    }
+    .form--btn-group .btn:first-child {
+        margin-right: 1rem;
+    }
+}
+
 @media screen and (min-width: 900px) {
     .form--control-group .form--input-line {
         max-width: 400px;
@@ -693,6 +711,15 @@ form .btn[type="submit"]:hover {
     width: 100%;
     padding: 0.5rem 1rem;
     background: whitesmoke;
+}
+
+.pps-main-content-body .content-header {
+    background: var(--color-white);
+}
+
+.pps-main-content-body .content-header .title {
+    margin: 0.5rem 1rem;
+    padding: 0.4rem 1rem;
 }
 
 .add-commodity .form--control-lead {
@@ -1407,6 +1434,8 @@ span[class="commodity__category"]:first-child {
 .commodity #commodityDeleteModal .modal-content .modal-footer .btn[type="submit"]:hover{
     background: #be0b1d;
 }
+
+
 
 @media screen and (min-width: 360px) and (max-width: 599px) {
 

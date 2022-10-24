@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Grocery Portable Point-Of-Sales system for small-scale grocery businesses">
     <meta name="author" content="teddai Ngoma">
-    <title>Add Commodity Page</title>
+    <title>View Budgeted Sales</title>
     <meta name="description" content="Portable POS system">
     <meta property="og:title" content="Portable POS system">
     <meta property="og:description" content="Portable POS system">
@@ -30,7 +30,7 @@
         <header>
             <nav class="navbar navbar-expand-lg bg-light pps-primary-navbar fixed-top" aria-label="Primary Nav bar">
                 <div class="container-fluid">
-                  <a class="navbar-brand" href="home.html">
+                  <a class="navbar-brand" href="../home.html">
                     <span class="icon--circle">
                         <img class="icon" src="../images/logo-dark.ico" alt="">
                     </span>
@@ -123,7 +123,7 @@
                         <span class="icon-container bi me-2">
                             <img class="icon" src="../images/add-commodity-light.ico" alt="">
                         </span>
-                      <span class="visually-hidden">Add Commodity Item</span>
+                      <span class="visually-hidden">View Budgeted Sales</span>
                     </span>
                     <hr class="pps-sidebar-divider">
                 </div>
@@ -132,7 +132,7 @@
             <aside class="pps-sidebar wide-display collapse collapse-horizontal" id="collapseSideMenuBar">
                 <div class="form--header">
                     <img class="form--brand" src="/images/add-commodity-light.ico" alt="">
-                    <h1 class="form--title">Add a Commodity Item</h1>
+                    <h1 class="form--title">View Sales</h1>
                 </div>
             </aside>
 
@@ -140,69 +140,73 @@
 
         <main class="pps-main-content">
 
-            <div class="add-commodity-form scrollable-list">
-                <div class="form--header">
-                    <img class="form--brand" src="/images/add-commodity-light.ico" alt="">
-                    <h1 class="form--title text-wrap">Add a Commodity Item</h1>
-                </div>
+          <div class="pps-main-content-header">
+            <h2 class="pps-main-content-title">View Sales</h2>
+          </div>
 
+          <div class="pps-main-content-body">
+            
+            <nav class="pps-body-nav">
+              <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Commodities</button>
+                <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Profile</button>
+                <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Contact</button>
+              </div>
+            </nav>
+            
+            <div class="tab-content pps-body-content" id="nav-tabContent">
+              
+              <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Name</th>
+                            <th scope="col">Budgeted Sales (K)</th>
+                            <th scope="col">Cost od Sales (K)</th>
+                            <th scope="col">Expected Gross Profit (K)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Cooking Oil</th>
+                            <td>10000</td>
+                            <td>8000</td>
+                            <td>2000</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Maq</th>
+                            <td>20000</td>
+                            <td>13500</td>
+                            <td>6500</td>
+                        </tr>
+                    </tbody>
+                </table>
 
-                <div class="add-commodity--body">
-                    <form class="add-commodity needs-validation" action="add-commodity-attributes.html" novalidate>
-                        
-                        <div class="form--control-group">
-                        
-                        <div class="form--control-lead">
-                            <img class="control-lead-icon" src="/images/item-light.ico" alt="">
-                            <h2 class="mb-0 control-lead-text">Commodity Item Details</h2>
-                        </div>
+              </div>
 
-                        <div class="row g-3">
-                            <div class="names row g-3">
+              <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                
+              </div>
 
-                            <div class="col-sm-6 form--input-line">
-                                <label for="firstName" class="form-label">Commodity Name:</label>
-                                <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
-                                <div class="invalid-feedback">
-                                Enter the Name of the Commodity, Please.
-                                </div>
-                            </div>
-
-                            <div class="col-sm-6 form--input-line">
-                                <label for="formFile" class="form-label">Image <span class="text-muted">(Optional)</span>:</label>
-                                <input type="file" class="form-control" id="formFile" placeholder="" value="">
-                                <div class="invalid-feedback">
-                                Provide an image of the commodity.
-                                </div>
-                            </div>
-
-
-                            </div>
-
-                            <div class="form--input-line">
-                            <label for="lastName" class="form-label">Description <span class="text-muted">(Optional)</span>:</label>
-                            </div>
-                            <textarea class="form-control" id="lastName" placeholder="describe your commodity item in a few words..." value="" aria-label="textarea"></textarea>
-                            <div class="invalid-feedback">
-                            Enter your Last Name, Please.
-                            </div>
-                        </div>
-
-                        </div>
-
-                        <div class="form--btn-group">
-                          <button class="btn btn--primary" type="reset">Clear</button>
-                          <button class="btn btn--primary" type="submit">Proceed</button>
-                        </div>
-                    </form>
-                </div>
+              <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                <p><strong>This is some placeholder content the Contact tab's associated content.</strong> Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling. You can use it with tabs, pills, and any other <code>.nav</code>-powered navigation.</p>
+              </div>
 
             </div>
 
-        </main>
+          </div>
 
+          <footer class="pps-main-content-footer">
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta culpa adipisci consequuntur incidunt sint quae minima totam non aliquid sapiente?
+            </p>
+          </footer>
+
+        </main>
+        
     </div>
-    
+
     <div class="container-fluid px-0 pps-footer">
         <footer class="block block--dark footer">
           <div class="grid footer__sections">
