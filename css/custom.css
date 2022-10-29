@@ -418,26 +418,31 @@ a {
     word-break: break-all;
 }
 
-.pps-table td {
-}
-
-/* .pps-table tbody tr {
-    flex-direction: row;
-} */
-
-/* .pps-table tbody tr th {
-    background: var(--color-white);
-    color: var(--color-blue);
-} */
-
-/* .pps-table tbody td {
-    flex-direction: column;
-    flex-wrap: wrap;
-} */
-
 .pps-table tbody td span[class="data-name"] {
     display: none;
 }
+
+.financial-statement .commodity__quantity,
+.financial-statement .commodity__acquisition-date {
+    width: 100%;
+}
+
+.financial-statement .commodity__quantity .quantity-text,
+.financial-statement .commodity__acquisition-date .acquisition-text {
+    flex-grow: 1;
+}
+
+.financial-statement .commodity__quantity .commodity__unit,
+.financial-statement .commodity__acquisition-date .acquisition-date {
+    margin-right: 0.3rem;
+    width: 8rem;
+}
+
+.financial-statement .commodity__quantity span:nth-child(2),
+.financial-statement .commodity__acquisition-date span:nth-child(2) {
+    display: none;
+}
+
 @media screen and (max-width: 499px) {
     .pps-table {
         color: var(--color-blue);
@@ -474,7 +479,10 @@ a {
 }
 
 @media screen and (min-width: 520px) {
-    
+    .financial-statement .commodity__quantity span:nth-child(2),
+    .financial-statement .commodity__acquisition-date span:nth-child(2) {
+        display: block;
+    }
 }
 
 
