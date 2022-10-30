@@ -379,13 +379,18 @@ a {
 .collapsible__chevron {
     transform: rotate(-90deg);
     transition: transform 0.3s;
+    opacity: 0.75;
+}
+
+.collapsible__chevron:hover {
+    opacity: 1;
 }
 
 .collapsible__content {
     max-height: 0;
     overflow: hidden;
     opacity: 0;
-    transition: all 0.3s
+    transition: all 0.5s ease-in-out;
 }
 
 .collapsible--expanded .collapsible__chevron {
@@ -430,6 +435,7 @@ a {
 .financial-statement .commodity__quantity .quantity-text,
 .financial-statement .commodity__acquisition-date .acquisition-text {
     flex-grow: 1;
+    font-weight: bold;
 }
 
 .financial-statement .commodity__quantity .commodity__unit,
@@ -439,8 +445,47 @@ a {
 }
 
 .financial-statement .commodity__quantity span:nth-child(2),
-.financial-statement .commodity__acquisition-date span:nth-child(2) {
+.financial-statement .commodity__acquisition-date span:nth-child(2),
+.financial-statement .commodity__acquisition-date.asset span:nth-child(3),
+.financial-statement .commodity__acquisition-date.asset.subtotal span:nth-child(2) {
     display: none;
+}
+
+
+.financial-statement .commodity__acquisition-date.asset .acquisition-text {
+    margin-left: 0.8rem;
+    font-weight: 400;
+    flex-grow: 1;
+}
+
+.financial-statement .commodity__acquisition-date.asset span:nth-child(2) {
+    display: flex;
+    margin-left: 2rem;
+    background: inherit;
+    color: var(--color-blue);
+}
+
+.financial-statement .commodity__acquisition-date.asset.subtotal .acquisition-text {
+    font-weight: bold;
+}
+
+.financial-statement .commodity__acquisition-date.asset.subtotal span:nth-child(3) {
+    display: flex;
+}
+
+.financial-statement .commodity__acquisition-date .acquisition-text.collapsible__header:hover {
+    background: var(--color-white);
+}
+.financial-statement .commodity__acquisition-date.total .acquisition-text {
+    text-transform: uppercase;
+}
+
+.financial-statement .inventories {
+    background: #eef1ff;
+}
+
+.financial-statement .inventories .scrollable-list {
+    max-height: 30vh;
 }
 
 @media screen and (max-width: 499px) {
@@ -482,6 +527,26 @@ a {
     .financial-statement .commodity__quantity span:nth-child(2),
     .financial-statement .commodity__acquisition-date span:nth-child(2) {
         display: block;
+    }
+
+    .financial-statement .commodity__acquisition-date.asset .acquisition-text {
+        
+    }
+
+    .financial-statement .commodity__acquisition-date.asset span:nth-child(2) {
+        flex-grow: 1;
+    }
+}
+
+@media screen and (min-width: 720px) {
+    .financial-statement .commodity__acquisition-date.asset .acquisition-text {
+        flex-grow: 2;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .financial-statement .commodity__acquisition-date.asset .acquisition-text {
+        flex-grow: 5;
     }
 }
 
