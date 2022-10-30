@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Grocery Portable Point-Of-Sales system for small-scale grocery businesses">
     <meta name="author" content="teddai Ngoma">
-    <title>View Budgeted Sales</title>
+    <title>Financial Statements</title>
     <meta name="description" content="Portable POS system">
     <meta property="og:title" content="Portable POS system">
     <meta property="og:description" content="Portable POS system">
@@ -434,136 +434,123 @@
               
               <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
                 
-                <div class="scrollable-list">
-                  <table class="table pps-table">
-                      <thead>
-                          <tr>
-                              <th scope="col" class="text-wrap">Name</th>
-                              <th scope="col" class="text-wrap">Budgeted Sales (K)</th>
-                              <th scope="col" class="text-wrap">Cost (K)</th>
-                              <th scope="col" class="text-wrap">Expected Gross Profit (K)</th>
-                          </tr>
-                      </thead>
-                      <tbody>
-                          <tr>
-                              <th scope="row">Cooking Oil</th>
-                              <td>
-                                <span class="data-name">Budgeted Sales (K):</span>
-                                10000
-                              </td>
-                              <td>
-                                <span class="data-name">Cost (K):</span>
-                                8000
-                              </td>
-                              <td>
-                                <span class="data-name">Budgeted Gross Profit (K):</span>
-                                2000
-                              </td>
-                          </tr>
-                          <tr>
-                              <th scope="row">Maq</th>
-                              <td>
-                                <span class="data-name">Budgeted Sales (K):</span>
-                                20000
-                              </td>
-                              <td>
-                                <span class="data-name">Cost (K):</span>
-                                13500
-                              </td>
-                              <td>
-                                <span class="data-name">Budgeted Gross Profit (K):</span>
-                                6500
-                              </td>
-                          </tr>
-                          
-                      </tbody>
-                  </table>
-                </div>
+                <div class="add-commodity-form scrollable-list">
+                    <div class="form--header">
+                        <img class="form--brand" src="../images/sell-light.ico" alt="">
+                        <h1 class="form--title text-wrap">Sell a Commodity Item</h1>
+                    </div>
+    
+    
+                    <div class="add-commodity--body">
+                        <form class="add-commodity sell needs-validation" action="add-commodity-attributes.html" novalidate>
+                            
+                            <div class="form--control-group">
+                        
+                                <div class="form--control-lead">
+                                    <img class="control-lead-icon" src="../images/item-light.ico" alt="">
+                                    <h2 class="mb-0 control-lead-text text-wrap">Commodity Details</h2>
+                                </div>
+        
+                                <input class="no-view" name="commodity_id" type="text" class="form-control" id="firstName" value="1" readonly>
+                                <span class="d-block">Description</span>
+        
+                                <div class="names row g-3">
 
-                <div class="card">
-                  <div class="card__body">
-      
-                      <span class="commodity__quantity">
-                          <span class="quantity-text">Total Gross Profit (MWK)</span>
-                          <span class="badge quantity-value">
-                              8500
-                          </span>
-                      </span>
-      
-                  </div>
+                                    <div class="col-sm-6 form--input-line">
+                                        <label for="firstName" class="form-label">Quantity:</label>
+                                        <input name="sell_quantity" type="number" class="form-control" id="firstName" placeholder="Available quantity" value="1" required>
+                                        <div class="invalid-feedback">
+                                            How much are you selling?.
+                                        </div>
+                                    </div>
+    
+                                    <div class="col-sm-6 form--input-line">
+                                        <label for="firstName" class="form-label">Payment Amount:</label>
+                                        <input name="paid_amount" type="number" class="form-control" id="firstName" placeholder="Amount Paid" required>
+                                        <div class="invalid-feedback">
+                                            How much has been paid?.
+                                        </div>
+                                    </div>
+    
+                                    <div class="col-sm-6 form--input-line">
+                                        <span class="commodity__amount">
+                                                <label for="lastName" class="form-label">Selling Price</label>
+                                                <input name="selling_price" type="number" class="form-control" id="lastName" placeholder=" MWK: 2000" value="2000" readonly required>    
+                                        </span>
+                                    </div>
+    
+                                </div>
+
+                                <span class="commodity__quantity">
+                                    <span class="quantity-text">Available Quantity</span>
+                                    <span class="badge quantity-value">9999</span>
+                                    <span class="commodity__unit"> Packet(s)</span>
+                                </span>
+        
+                            </div>
+    
+                            <div class="form--btn-group">
+                              <button class="btn btn--primary" type="reset">Clear</button>
+                              <button class="btn btn--primary" type="submit">Sell</button>
+                            </div>
+                        </form>
+                    </div>
+    
                 </div>
 
               </div>
 
               <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
 
-                <div class="scrollable-list">
-                  <table class="table pps-table">
-                      <thead>
-                          <tr>
-                              <th scope="col">Name</th>
-                              <th scope="col">Budgeted Sales (K)</th>
-                              <th scope="col">Actual Sales (K)</th>
-                              <th scope="col">Cost (K)</th>
-                              <th scope="col">Gross Profit (K)</th>
-                          </tr>
-                      </thead>
-                      <tbody>
-                          <tr>
-                              <th scope="row">Cooking Oil</th>
-                              <td>
-                                <span class="data-name">Budgeted Sales (K):</span>
-                                10000
-                              </td>
-                              <td>
-                                <span class="data-name">Actual Sales (K):</span>
-                                11500
-                              </td>
-                              <td>
-                                <span class="data-name">Cost (K):</span>
-                                8000
-                              </td>
-                              <td>
-                                <span class="data-name">Gross Profit (K):</span>
-                                3500
-                              </td>
-                          </tr>
-                          <tr>
-                              <th scope="row">Maq</th>
-                              <td>
-                                <span class="data-name">Budgeted Sales (K):</span>
-                                20000
-                              </td>
-                              <td>
-                                <span class="data-name">Actual Sales (K):</span>
-                                12000
-                              </td>
-                              <td>
-                                <span class="data-name">Cost (K):</span>
-                                13500
-                              </td>
-                              <td>
-                                <span class="data-name">Gross Profit (K):</span>
-                                -1500
-                              </td>
-                          </tr>
-                          
-                      </tbody>
-                  </table>
-                </div>
-
-                <div class="card">
-                  <div class="card__body">
-      
-                      <span class="commodity__quantity">
-                          <span class="quantity-text">Total Gross Profit (MWK)</span>
-                          <span class="badge quantity-value">
-                              2000
+                  <div class="commodity financial-statement">
+                    <div class="card">
+                        <header class="card__header">
+                            <div class="commodity__icon">
+                                <img class="icon" src="../../images/item-light.ico" alt="">
+                                <h3 class="commodity__name">Statement of Profit or Loss of [Business_Name] as at [DD/MM/YYYY]</h3>
+                            </div>
+                        </header>
+                        <div class="card__body collapsible">
+                          <span class="commodity__quantity statement--head">
+                            <span class="quantity-text"></span>
+                            <span class="commodity__unit">K</span>
+                            <span class="commodity__unit">K</span>
                           </span>
-                      </span>
-      
+                          <span class="commodity__acquisition-date statement--body">
+                            <span class="acquisition-text collapsible__header">
+                              Sales
+                            </span>
+                            <span class="badge acquisition-date"></span>
+                            <span class="badge acquisition-date">22000</span>
+                          </span>                       
+                          <span class="commodity__acquisition-date statement--body">
+                            <span class="acquisition-text collapsible__header">
+                              Cost of Sales
+                            </span>
+                            <span class="badge acquisition-date"></span>
+                            <span class="badge acquisition-date">(20000)</span>
+                          </span> 
+                          <span class="commodity__acquisition-date statement--body total">
+                            <span class="acquisition-text">Gross Profit</span>
+                            <span class="badge acquisition-date"></span>
+                            <span class="badge acquisition-date">2000</span>
+                          </span>                       
+                          <span class="commodity__acquisition-date statement--body">
+                            <span class="acquisition-text">General Expenses</span>
+                            <span class="badge acquisition-date"></span>
+                            <span class="badge acquisition-date">(0)</span>
+                          </span>                        
+                          <span class="commodity__acquisition-date statement--body total">
+                            <span class="acquisition-text">Net Profit (or loss)</span>
+                            <span class="badge acquisition-date"></span>
+                            <span class="badge acquisition-date">2000</span>
+                          </span>                       
+                        </div>
+                        <footer class="card__footer">
+                          <div class="card__divider"></div>
+                        </footer>
+                    </div>
                   </div>
-                </div>
 
               </div>
 
