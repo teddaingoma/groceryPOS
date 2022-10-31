@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Grocery Portable Point-Of-Sales system for small-scale grocery businesses">
+    <meta name="author" content="teddai Ngoma">
+    <title>Sell Commodity</title>
+    <meta name="description" content="Portable POS system">
+    <meta property="og:title" content="Portable POS system">
+    <meta property="og:description" content="Portable POS system">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="http://">
+    <meta property="og:url" content="https://pps.com">
+
+    <!-- Bootstrap core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="../css/custom.css" rel="stylesheet">
+        
+
+    <!-- HypeGames icon -->
+    <link rel="icon" href="../images/logo-dark.ico">
+</head>
+
+<body class="add-commodity-body">
+
+    <div class="container-fluid px-0 pps-header">
+      <header>
+          <nav class="navbar navbar-expand-lg bg-light pps-primary-navbar fixed-top" aria-label="Primary Nav bar">
+              <div class="container-fluid">
+                <a class="navbar-brand" href="../home.html">
+                  <span class="icon--circle">
+                      <img class="icon" src="../images/logo-dark.ico" alt="">
+                  </span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#ppsPrimaryNavbar" aria-controls="ppsPrimaryNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="icon-container">
+                    <img class="icon" src="../images/menu-dark.ico" alt="">
+                  </span>
+                </button>
+                <div class="collapse navbar-collapse" id="ppsPrimaryNavbar">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0 pps-main-nav">
+                    <li class="nav-item item-icon">
+                      <span class="icon--circle">
+                        <img class="icon" src="../images/home-dark.ico" alt="">
+                      </span>
+                      <a class="nav-link" href="../home.html">Home</a>
+                    </li>
+                    <li class="nav-item item-icon">
+                      <span class="icon--circle">
+                        <img class="icon" src="../images/add-cus-dark.ico" alt="">
+                      </span>
+                      <a class="nav-link" href="add-customer.html">Add Customer</a>
+                    </li>
+                    
+                    <li class="nav-item item-icon">
+                      <span class="icon--circle">
+                        <img class="icon" src="../images/add-commodity-dark.ico" alt="">
+                      </span>
+                      <a class="nav-link" href="add-commodity.html">Add Commodity</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="dropdowna" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</a>
+                      <ul class="dropdown-menu" aria-labelledby="dropdowna">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      </ul>
+                    </li>
+
+                    <li class="nav-item item-icon">
+                      <span class="icon--circle">
+                        <img class="icon" src="../images/sell-dark.ico" alt="">
+                      </span>
+                      <a class="nav-link" href="sell-commodity.html">Sell</a>
+                    </li>
+                  </ul>
+                  <div class="user">
+                      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                          
+                          <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="profile" data-bs-toggle="dropdown" aria-expanded="false">
+                              <span class="icon--circle">
+                                  <img class="icon" src="../images/admin-light.ico" alt="">
+                              </span>
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="profile">
+                              <li class="dropdown-item item-icon">
+                                <span>
+                                  <img class="icon" src="../images/register-dark.ico" alt="">
+                                </span>
+                                <a class="nav-link" href="register.html">register</a>
+                              </li>
+                              <li class="dropdown-item item-icon">
+                                <span>
+                                  <img class="icon" src="../images/logout-dark.ico" alt="">
+                                </span>
+                                <a class="nav-link" href="login.html">logout</a>
+                              </li>
+                            </ul>
+                          </li>
+                          <li class="nav-item">
+                              <a href="user-profile.html" class="nav-link">username</a>
+                          </li>
+                      </ul>
+                  </div>
+                </div>
+              </div>
+          </nav>
+      </header>
+    </div>
+
+    <div class="container-fluid px-0 pps-content">
+
+        <div class="pps-aside">
+
+            <aside class="pps-sidebar-icon">
+                <div class="d-flex flex-column flex-shrink-0 pps-sidebar__nav-icon">
+                    <span class="d-block pps-sidebar-icon-title" title="Add Commodity item" data-bs-toggle="tooltip" data-bs-placement="right">
+                        <span class="icon-container bi me-2">
+                            <img class="icon" src="../images/sell-light.ico" alt="">
+                        </span>
+                      <span class="visually-hidden">sell Commodity Item</span>
+                    </span>
+                    <hr class="pps-sidebar-divider">
+                </div>
+            </aside>
+
+            <aside class="pps-sidebar wide-display collapse collapse-horizontal" id="collapseSideMenuBar">
+                <div class="form--header">
+                    <img class="form--brand" src="/images/sell-light.ico" alt="">
+                    <h1 class="form--title">Sell Commodity Item</h1>
+                </div>
+            </aside>
+
+        </div>
+
+        <main class="pps-main-content">
+
+          <div class="pps-main-content-header">
+            <h2 class="pps-main-content-title">Point Of Sale</h2>
+          </div>
+
+          <div class="pps-main-content-body">
+            
+            <nav class="pps-body-nav">
+              <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Commodity</button>
+              </div>
+            </nav>
+            
+            <div class="tab-content pps-body-content" id="nav-tabContent">
+              
+              <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                
+                <div class="add-commodity-form scrollable-list">
+                    <div class="form--header">
+                        <img class="form--brand" src="../images/sell-light.ico" alt="">
+                        <h1 class="form--title text-wrap">Sell a Commodity Item</h1>
+                    </div>
+    
+    
+                    <div class="add-commodity--body">
+                        <form class="add-commodity sell needs-validation" action="add-commodity-attributes.html" novalidate>
+                            
+                            <div class="form--control-group">
+                        
+                                <div class="form--control-lead">
+                                    <img class="control-lead-icon" src="../images/item-light.ico" alt="">
+                                    <h2 class="mb-0 control-lead-text text-wrap">Commodity Details</h2>
+                                </div>
+        
+                                <input class="no-view" name="commodity_id" type="text" class="form-control" id="firstName" value="1" readonly>
+                                <span class="d-block">Description</span>
+        
+                                <div class="names row g-3">
+
+                                    <div class="col-sm-6 form--input-line">
+                                        <label for="firstName" class="form-label">Quantity:</label>
+                                        <input name="sell_quantity" type="number" class="form-control" id="firstName" placeholder="Available quantity" value="1" required>
+                                        <div class="invalid-feedback">
+                                            How much are you selling?.
+                                        </div>
+                                    </div>
+    
+                                    <div class="col-sm-6 form--input-line">
+                                        <label for="firstName" class="form-label">Payment Amount:</label>
+                                        <input name="paid_amount" type="number" class="form-control" id="firstName" placeholder="Amount Paid" required>
+                                        <div class="invalid-feedback">
+                                            How much has been paid?.
+                                        </div>
+                                    </div>
+    
+                                    <div class="col-sm-6 form--input-line">
+                                        <span class="commodity__amount">
+                                                <label for="lastName" class="form-label">Selling Price (MK)</label>
+                                                <input name="selling_price" type="number" class="form-control" id="lastName" placeholder=" MWK: 2000" value="2000" readonly required>    
+                                        </span>
+                                    </div>
+    
+                                </div>
+
+                                <span class="commodity__quantity">
+                                    <span class="quantity-text">Available Quantity</span>
+                                    <span class="badge quantity-value">9999</span>
+                                    <span class="commodity__unit"> Packet(s)</span>
+                                </span>
+        
+                            </div>
+    
+                            <div class="form--btn-group">
+                              <button class="btn btn--primary" type="reset">Clear</button>
+                              <button class="btn btn--primary" type="submit">Sell</button>
+                            </div>
+                        </form>
+                    </div>
+    
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <footer class="pps-main-content-footer">
+            <p>
+                Sell Commodity
+            </p>
+          </footer>
+
+        </main>
+        
+    </div>
+
+    <div class="container-fluid px-0 pps-footer">
+      <footer class="block block--dark footer">
+        <div class="grid footer__sections">
+            <section class="collapsible collapsible--expanded footer__section">
+                <header class="collapsible__header">
+                    <h2 class="collapsible__heading footer__heading">Products</h2>
+                    <img src="../images/chevron-light.ico" alt="" class="icon icon--white collapsible__chevron">
+                </header>
+                <div class="collapsible__content">
+                    <ul class="list">
+                        <li><a href="view-inventory.html">View Commodities</a></li>
+                    </ul>
+                </div>
+            </section>
+            <section class="collapsible footer__section">
+                <header class="collapsible__header">
+                    <h2 class="collapsible__heading footer__heading">Business</h2>
+                    <img src="../images/chevron-light.ico" alt="" class="icon icon--white collapsible__chevron">
+                </header>
+                <div class="collapsible__content">
+                    <ul class="list">
+                        <li><a href="user-profile.html">About</a></li>
+                        <li><a href="#">Affiliates</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+            </section>
+            <section class="collapsible footer__section">
+                <header class="collapsible__header">
+                    <h2 class="collapsible__heading footer__heading">Support</h2>
+                    <img src="../images/chevron-light.ico" alt="" class="icon icon--white collapsible__chevron">
+                </header>
+                <div class="collapsible__content">
+                    <ul class="list">
+                        <li><a href="user-profile.html">Contact</a></li>
+                        <li><a href="#">Knowledge Base</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+            </section>
+            <section class="collapsible footer__section">
+                <header class="collapsible__header">
+                    <h2 class="collapsible__heading footer__heading">Find Us</h2>
+                    <img src="../images/chevron-light.ico" alt="" class="icon icon--white collapsible__chevron">
+                </header>
+                <div class="collapsible__content">
+                    <ul class="list list--icon">
+                        <li><a href="#">
+                          <span class="icon-container icon--small">
+                              <img class="icon" src="../images/whatsapp.ico" alt="">
+                          </span>
+                          <span>whatsapp</span>
+                        </a></li>
+                        <li><a href="#">
+                          <span class="icon-container icon--small">
+                              <img class="icon" src="../images/facebook.ico" alt="">
+                          </span>
+                          <span>facebook</span>
+                        </a></li>
+                        <li><a href="#">
+                          <span class="icon-container icon--small">
+                              <img class="icon" src="../images/instagram.ico" alt="">
+                          </span>
+                          <span>instagram</span>
+                        </a></li>
+                        <li><a href="#">
+                          <span class="icon-container icon--small">
+                              <img class="icon" src="../images/twitter.ico" alt="">
+                          </span>
+                          <span>twitter</span>
+                        </a></li>
+                    </ul>
+                </div>
+            </section>
+            <section class="footer__brand">
+                <img src="../images/logo-light.ico" alt="">
+                <p class="footer__copyright">
+                    Copyright 2022 Grocery POS system
+                </p>
+            </section>
+        </div>
+      </footer>
+    </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="../js/jquery.min.js" ></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/custom.js"></script>
+
+</body>
+</html>
