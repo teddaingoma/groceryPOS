@@ -19,5 +19,6 @@
   "homepage": "https://github.com/teddaingoma/groceryPOS#readme",
   "devDependencies": {
     "parcel-bundler": "^1.12.5"
-  }
+  },
+  "dependencies": {}
 }
