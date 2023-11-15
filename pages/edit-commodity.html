@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Grocery Portable Point-Of-Sales system for small-scale grocery businesses">
     <meta name="author" content="teddai Ngoma">
-    <title>Add Commodity Attributes Page</title>
+    <title>Edit | Name</title>
     <meta name="description" content="Portable POS system">
     <meta property="og:title" content="Portable POS system">
     <meta property="og:description" content="Portable POS system">
@@ -123,7 +123,7 @@
                         <span class="icon-container bi me-2">
                             <img class="icon" src="../images/add-commodity-light.ico" alt="">
                         </span>
-                      <span class="visually-hidden">Commodity Attributes</span>
+                      <span class="visually-hidden">Edit a Commodity</span>
                     </span>
                     <hr class="pps-sidebar-divider">
                 </div>
@@ -131,8 +131,8 @@
 
             <aside class="pps-sidebar wide-display collapse collapse-horizontal" id="collapseSideMenuBar">
                 <div class="form--header">
-                    <img class="form--brand" src="/images/add-commodity-light.ico" alt="">
-                    <h1 class="form--title">Commodity Attributes</h1>
+                    <img class="form--brand" src="../images/edit-filled.ico" alt="">
+                    <h1 class="form--title">Edit a Commodity</h1>
                 </div>
             </aside>
 
@@ -142,106 +142,112 @@
 
             <div class="add-commodity-form">
                 <div class="form--header">
-                    <div class="alert alert-success alert-dismissible fade show text-wrap" role="alert">
-                        <strong>Great!</strong> Please provide attributes of the commodity.
-                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                    </div>
-                    <img class="form--brand" src="/images/add-commodity-light.ico" alt="">
-                    <h1 class="form--title text-wrap">Commodity Attributes</h1>
+                    <img class="form--brand" src="../images/edit-filled.ico" alt="">
+                    <h1 class="form--title text-wrap">Edit a Commodity</h1>
                 </div>
 
 
                 <div class="add-commodity--body">
-                    <form class="add-commodity needs-validation" action="/home.html" novalidate>
+                    <form class="add-commodity needs-validation" action="../home.html" method="POST" novalidate>
                         
                         <div class="form--control-group">
-                        
-                        <div class="form--control-lead">
-                            <img class="control-lead-icon" src="../images/item-light.ico" alt="">
-                            <h2 class="mb-0 control-lead-text text-wrap">Provide the commodity's attributes</h2>
-                        </div>
 
-                        <input class="no-view" name="commodity_id" type="text" class="form-control" id="firstName" value="1" readonly>
+                            <div class="form--control-lead">
+                                <img class="control-lead-icon" src="{{ asset('commodity_images/' . $commodity -> image_path) }}" alt="">
+                                <h2 class="mb-0 control-lead-text">Commodity Item Details</h2>
+                            </div>
+                            <input class="no-view" name="commodity_id" type="text" class="form-control" id="firstName" value="{{ $commodity -> id }}" readonly>
+                            <div class="row g-3">
+                                <div class="names row g-3">
 
-                        <div class="row g-3">
-                            <div class="names row g-3">
-
-                                <div class="col-sm-6 form--input-line">
-                                    <label for="category" class="form-label">Commodity Category:</label>
-                                    <select id="category" name="category_id" class="form-select" aria-label="Select Commodity Category" required>
-                                        <option selected>include in a category</option>
-                                        <option value="">Beverages</option>
-                                        <option value="">Detergents</option>
-                                        <option value="">Snacks</option>
-                                        <option value="">Minerals</option>
-                                    </select>
-                                    <div class="invalid-feedback">
-                                        In what category does it belong?
+                                    <div class="col-sm-6 form--input-line">
+                                        <label for="firstName" class="form-label">Change Commodity Name:</label>
+                                        <input name="commodity_name" type="text" class="form-control" id="firstName" placeholder="{{ $commodity -> name }}" value="{{ $commodity -> name }}" required>
+                                        <div class="invalid-feedback">
+                                        Enter the Name of the Commodity, Please.
+                                        </div>
                                     </div>
+
+                                    <div class="col-sm-6 form--input-line">
+                                        <label for="formFile" class="form-label">Change the commodity Image <span class="text-muted">(Optional)</span>:</label>
+                                        <input name="commodity_image" type="file" class="form-control" id="formFile" placeholder="" value="{{ asset('commodity_images/' . $commodity -> image_path) }}">
+                                        <div class="invalid-feedback">
+                                        Provide an image of the commodity.
+                                        </div>
+                                    </div>
+
+
                                 </div>
-                                <span class="col-sm-1 badge d-flex category--link">
-                                    <a href="" role="button" class="btn btn--icon">
-                                        <span class="icon-container icon--circle">
-                                            <img class="icon" src="../images/add-dark.ico" alt="">
-                                            new
+
+                                <div class="form--input-line">
+                                    <label for="lastName" class="form-label">Change Description <span class="text-muted">(Optional)</span>:</label>
+                                </div>
+                                <textarea name="commodity_description" class="form-control" id="lastName" placeholder="{{ $commodity -> description  }}" aria-label="textarea" required>
+                                    {{ $commodity->description }}
+                                </textarea>
+                                <div class="invalid-feedback">
+                                    Describe your commodity in a few words..
+                                </div>
+                            </div>
+
+                            <div class="commodity">
+                                <div class="card">
+                                    <header class="card__header">
+        
+                                        <div class="commodity__tags">
+                                            <span class="commodity__price">
+                                                <span class="commodity__currency">MWK</span>
+                                                <span class="commodity__amount">5000</span>
+                                                <span class="commodity__unit">/Packet</span>
+                                            </span>
+                                        </div>
+                                    </header>
+                                    <div class="card__body">
+        
+                                        <span class="commodity__quantity">
+                                            <span class="quantity-text">Quantity</span>
+                                            <span class="badge quantity-value">9999</span>
+                                            <span class="commodity__unit"> Packet(s)</span>
                                         </span>
-                                    </a>
-                                </span>
 
-                            </div>
-
-                            <div class="col-sm-6 form--input-line">
-                                <label for="lastName" class="form-label">Cost Price <span class="text-muted">MWK</span>:</label>
-                                <input name="cost_price" type="number" class="form-control" id="lastName" placeholder="MWK: 00.00" value="" required>
-                                <div class="invalid-feedback">
-                                    Enter the cost price, please.
-                                </div>
-                            </div>
-
-                            <div class="col-sm-6 form--input-line">
-                                <label for="lastName" class="form-label">Selling Price <span class="text-muted">MWK</span>:</label>
-                                <input name="selling_price" type="number" class="form-control" id="lastName" placeholder="MWK: 00.00" value="" required>
-                                <div class="invalid-feedback">
-                                    Enter the cost price, please.
-                                </div>
-                            </div>
-
-                            <div class="col-sm-6 form--input-line">
-                                <label for="firstName" class="form-label">Quantity:</label>
-                                <input name="commodity_quantity" type="number" class="form-control" id="firstName" placeholder="Available quantity" value="" required>
-                                <div class="invalid-feedback">
-                                    Enter the available quantity of the Commodity, Please.
-                                </div>
-                            </div>
-
-                            <div class="col-sm-6 form--input-line">
-                                <label for="firstName" class="form-label">Commodity Unit:</label>
-                                <input name="commodity_unit" type="text" class="form-control" id="firstName" placeholder="" value="" required>
-                                <div class="invalid-feedback">
-                                    Enter the unit of measurement of the commodity, Please.
-                                </div>
-                            </div>
-
-                            <div class="date">
-
-                                <div class="col-sm-6 form--input-line">
-                                    <label for="dob" class="form-label">Date Acquired</label>
-
-                                    <input type="date" name="acquisition_date" class="form-control" id="dob" placeholder="birthday" required>
-
-                                    <div class="invalid-feedback">
-                                        When was the commodity purchased or added?.
+                                        <span class="commodity__acquisition-date">
+                                            <span class="acquisition-text">Acquired On</span>
+                                            <span class="badge acquisition-date">08-10-2022</span>
+                                        </span>
+                
+                                        <span class="commodity__category">
+                                            <span class="category-text">Category (s) :</span>
+                                            
+                                            <div class="category-values">
+                                                <a href="" class="link"><span class="badge category-value">Beverage</span></a>
+                                                <a href="" class="link"><span class="badge category-value">Sweet</span></a>
+                                                <a href="" class="link"><span class="badge category-value">Cooking</span></a>
+                                                <a href="" class="link"><span class="badge category-value">Cream</span></a>
+                                            </div>
+                                        </span>
+                                          
+                                        <span class="commodity__type">
+                                            <span class="type-text">Type (s) :</span>
+                                            
+                                            <div class="type-values">
+                                                <a href="" class="link"><span class="badge type-value">type1</span></a>
+                                                <a href="" class="link"><span class="badge type-value">type2</span></a>
+                                                <a href="" class="link"><span class="badge type-value">type3</span></a>
+                                                <a href="" class="link"><span class="badge type-value">type4</span></a>
+                                            </div>
+                                        </span>
+                                        
                                     </div>
+                                    
                                 </div>
-
                             </div>
-                        </div>
+                            
 
                         </div>
 
                         <div class="form--btn-group">
-                          <button class="btn btn--primary" type="reset">Clear</button>
-                          <button class="btn btn--primary" type="submit">Add Commodity</button>
+                            <button class="btn btn--primary" type="reset">Clear</button>
+                            <button class="btn btn--primary" type="submit">Update</button>
                         </div>
                     </form>
                 </div>

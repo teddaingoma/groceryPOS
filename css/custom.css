@@ -906,6 +906,31 @@ form .btn[type="submit"]:hover {
 .add-commodity .form--input-line input {
     border: 1px solid var(--color-blue);
 }
+
+
+.add-commodity .category--link .icon--circle{
+    background: transparent;
+    border: 1px solid var(--color-blue);
+    border-radius: 15%;
+    color: var(--color-blue);
+}
+
+.add-commodity .category--link .icon--circle:hover {
+    background: var(--color-secondary)
+}
+
+.add-commodity .card {
+    border-radius: 0;
+    border: 0;
+    border-bottom: 1px solid var(--color-blue);
+    background: transparent;
+    margin-top: 1rem;
+}
+
+.add-commodity .card:hover {
+    box-shadow: none;
+}
+
 /* Add Commodity */
 
 /* Sell */
