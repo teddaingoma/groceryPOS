@@ -121,7 +121,7 @@
                 <div class="d-flex flex-column flex-shrink-0 pps-sidebar__nav-icon">
                     <span class="d-block pps-sidebar-icon-title" title="Add Commodity item" data-bs-toggle="tooltip" data-bs-placement="right">
                         <span class="icon-container bi me-2">
-                            <img class="icon" src="../images/add-commodity-light.ico" alt="">
+                            <img class="icon" src="../images/maintenance-light.ico" alt="">
                         </span>
                       <span class="visually-hidden">Edit a Commodity</span>
                     </span>
@@ -131,7 +131,7 @@
 
             <aside class="pps-sidebar wide-display collapse collapse-horizontal" id="collapseSideMenuBar">
                 <div class="form--header">
-                    <img class="form--brand" src="../images/edit-filled.ico" alt="">
+                    <img class="form--brand" src="../images/maintenance-light.ico" alt="">
                     <h1 class="form--title">Edit a Commodity</h1>
                 </div>
             </aside>
@@ -142,7 +142,7 @@
 
             <div class="add-commodity-form">
                 <div class="form--header">
-                    <img class="form--brand" src="../images/edit-filled.ico" alt="">
+                    <img class="form--brand" src="../images/maintenance-light.ico" alt="">
                     <h1 class="form--title text-wrap">Edit a Commodity</h1>
                 </div>
 
@@ -153,16 +153,15 @@
                         <div class="form--control-group">
 
                             <div class="form--control-lead">
-                                <img class="control-lead-icon" src="{{ asset('commodity_images/' . $commodity -> image_path) }}" alt="">
+                                <img class="control-lead-icon" src="../images/item-light.ico" alt="">
                                 <h2 class="mb-0 control-lead-text">Commodity Item Details</h2>
                             </div>
-                            <input class="no-view" name="commodity_id" type="text" class="form-control" id="firstName" value="{{ $commodity -> id }}" readonly>
                             <div class="row g-3">
                                 <div class="names row g-3">
 
                                     <div class="col-sm-6 form--input-line">
                                         <label for="firstName" class="form-label">Change Commodity Name:</label>
-                                        <input name="commodity_name" type="text" class="form-control" id="firstName" placeholder="{{ $commodity -> name }}" value="{{ $commodity -> name }}" required>
+                                        <input name="commodity_name" type="text" class="form-control" id="firstName" placeholder="name" value="name" required>
                                         <div class="invalid-feedback">
                                         Enter the Name of the Commodity, Please.
                                         </div>
@@ -170,7 +169,7 @@
 
                                     <div class="col-sm-6 form--input-line">
                                         <label for="formFile" class="form-label">Change the commodity Image <span class="text-muted">(Optional)</span>:</label>
-                                        <input name="commodity_image" type="file" class="form-control" id="formFile" placeholder="" value="{{ asset('commodity_images/' . $commodity -> image_path) }}">
+                                        <input name="commodity_image" type="file" class="form-control" id="formFile" placeholder="" value="../images/maintenance-light.ico">
                                         <div class="invalid-feedback">
                                         Provide an image of the commodity.
                                         </div>
@@ -182,8 +181,8 @@
                                 <div class="form--input-line">
                                     <label for="lastName" class="form-label">Change Description <span class="text-muted">(Optional)</span>:</label>
                                 </div>
-                                <textarea name="commodity_description" class="form-control" id="lastName" placeholder="{{ $commodity -> description  }}" aria-label="textarea" required>
-                                    {{ $commodity->description }}
+                                <textarea name="commodity_description" class="form-control" id="lastName" placeholder="description" aria-label="textarea" required>
+                                    description
                                 </textarea>
                                 <div class="invalid-feedback">
                                     Describe your commodity in a few words..
@@ -217,7 +216,9 @@
                 
                                         <span class="commodity__category">
                                             <span class="category-text">Category (s) :</span>
-                                            
+                                            <a href="" role="button">
+                                                <img class="icon" src="../images/add-dark.ico" alt="">
+                                            </a>
                                             <div class="category-values">
                                                 <a href="" class="link"><span class="badge category-value">Beverage</span></a>
                                                 <a href="" class="link"><span class="badge category-value">Sweet</span></a>
