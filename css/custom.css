@@ -38,6 +38,10 @@ body {
     padding-top: 3.7rem;
 }
 
+body.no-nav {
+    padding-top: 0;
+}
+
 h1, h2, h3, h4 {
     color: var(--color-blue);
 }
