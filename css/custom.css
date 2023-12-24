@@ -891,6 +891,91 @@ form .btn[type="submit"]:hover {
     padding: 0.4rem 1rem;
 }
 
+.select-page .pps-main-content-body {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0.3rem;
+}
+
+.select-page .pps-main-content-body .card {
+    margin: 0.3rem;
+    border-radius: 0;
+}
+
+.select-page .pps-main-content-body .card .card__header {
+    background: var(--color-white);
+    color: var(--color-blue);
+}
+
+.select-page .pps-main-content-body .card .commodity__icon {
+    background: var(--color-white);
+}
+
+.select-page .pps-main-content-body .card .commodity__name {
+    color: var(--color-blue)
+}
+
+.select-page .pps-main-content-body .card.dashboard .btn--img::before {
+    content: url(../images/menubar-light.ico);
+}
+
+.select-page .pps-main-content-body .card.register .btn--img::before {
+    content: url(../images/register-light.ico);
+}
+
+.select-page .pps-footer {
+    border-top: 0;
+}
+.select-page .block.footer {
+    --padding-vertical: 2rem;
+    background: var(--color-accent-light)
+}
+
+@media screen and (min-width: 520px) {
+    .select-page .pps-main-content-body .card {
+        width: 40%;
+    }
+
+    .select-page .pps-main-content-body .commodity .card {
+        width: auto;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .select-page .pps-main-content-body .commodity {
+        width: 48%;
+    }
+}
+
+@media screen and (min-width: 720px) {
+    .select-page .pps-main-content-body .card {
+        width: 40%;
+    }
+}
+
+@media screen and (min-width: 920px) {
+    .select-page .pps-main-content-body .commodity {
+        width: 40%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .select-page .pps-main-content-body .card {
+        width: 30%;
+    }
+
+    .select-page .pps-main-content-body .card {
+        width: 48%;
+    }
+}
+
+@media screen and (min-width: 1210px) {
+    .select-page .pps-main-content-body .card {
+        width: 24%;
+    }
+}
+
 .add-commodity .form--control-lead {
     border: 0;
     border-bottom: 1px solid var(--color-blue);
