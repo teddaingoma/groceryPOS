@@ -891,28 +891,38 @@ form .btn[type="submit"]:hover {
     padding: 0.4rem 1rem;
 }
 
-.select-page .pps-main-content-body {
+.select-page .pps-main-content-body,
+.user-profile-page .pps-main-content-body {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     padding: 0.3rem;
 }
 
-.select-page .pps-main-content-body .card {
+.select-page .pps-main-content-body .card,
+.user-profile-page .pps-main-content-body .card,
+.modal .card {
     margin: 0.3rem;
     border-radius: 0;
+    width: auto;
 }
 
-.select-page .pps-main-content-body .card .card__header {
+.select-page .pps-main-content-body .card .card__header,
+.user-profile-page .pps-main-content-body .card .card__header,
+.modal .card .card__header {
     background: var(--color-white);
     color: var(--color-blue);
 }
 
-.select-page .pps-main-content-body .card .commodity__icon {
+.select-page .pps-main-content-body .card .commodity__icon,
+.user-profile-page .pps-main-content-body .card .commodity__icon,
+.modal .card .commodity__icon {
     background: var(--color-white);
 }
 
-.select-page .pps-main-content-body .card .commodity__name {
+.select-page .pps-main-content-body .card .commodity__name,
+.user-profile-page .pps-main-content-body .card .commodity__name,
+.modal .card .commodity__name {
     color: var(--color-blue)
 }
 
@@ -924,12 +934,52 @@ form .btn[type="submit"]:hover {
     content: url(../images/register-light.ico);
 }
 
-.select-page .pps-footer {
+.select-page .pps-footer,
+.user-profile-page .pps-footer {
     border-top: 0;
 }
-.select-page .block.footer {
+.select-page .block.footer,
+.user-profile-page .block.footer {
     --padding-vertical: 2rem;
-    background: var(--color-accent-light)
+    background: var(--color-accent-light);
+}
+
+.select-page .footer .footer__copyright,
+.user-profile-page .footer .footer__copyright {
+    color: var(--color-blue-dark);
+}
+
+.select-page.user-profile-page .pps-main-content-body {
+    justify-content: space-between;
+}
+
+.user-profile-page .pps-main-content-body .card .btn--img::before {
+    content: none;
+}
+
+.user-profile-page .card .btn--group {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.user-profile-page .card .btn {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    border-radius: 0;
+    box-shadow: 0px 2px 4px 1px #117446;
+}
+
+.user-profile-page .card .btn:hover {
+    border: solid 1px #08cf08;
+}
+
+.user-profile-page .commodity .card .card__btn .btn {
+        /* background: transparent;
+        border: 1px solid var(--color-blue);
+        color: inherit;
+        border-radius: 0;
+        padding: 0.2rem 0.5rem;
+        box-shadow: 0px 2px 4px 1px #00313d; */
 }
 
 @media screen and (min-width: 520px) {

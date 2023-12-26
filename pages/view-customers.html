@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Grocery Portable Point-Of-Sales system for small-scale grocery businesses">
+    <meta name="author" content="teddai Ngoma">
+    <title>View Customers</title>
+    <meta name="description" content="Portable POS system">
+    <meta property="og:title" content="Portable POS system">
+    <meta property="og:description" content="Portable POS system">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="http://">
+    <meta property="og:url" content="https://pps.com">
+
+    <!-- Bootstrap core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="../css/custom.css" rel="stylesheet">
+        
+
+    <!-- HypeGames icon -->
+    <link rel="icon" href="../images/customers.ico">
+</head>
+
+<body class="add-commodity-body">
+
+    <div class="container-fluid px-0 pps-header">
+        <header>
+            <nav class="navbar navbar-expand-lg bg-light pps-primary-navbar fixed-top" aria-label="Primary Nav bar">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="../home.html">
+                    <span class="icon--circle">
+                        <img class="icon" src="../images/logo-dark.ico" alt="">
+                    </span>
+                  </a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#ppsPrimaryNavbar" aria-controls="ppsPrimaryNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="icon-container">
+                      <img class="icon" src="../images/menu-dark.ico" alt="">
+                    </span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="ppsPrimaryNavbar">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 pps-main-nav">
+                      <li class="nav-item item-icon">
+                        <span class="icon--circle">
+                          <img class="icon" src="../images/home-dark.ico" alt="">
+                        </span>
+                        <a class="nav-link" href="../home.html">Home</a>
+                      </li>
+                      <li class="nav-item item-icon">
+                        <span class="icon--circle">
+                          <img class="icon" src="../images/add-cus-dark.ico" alt="">
+                        </span>
+                        <a class="nav-link" href="add-customer.html">Add Customer</a>
+                      </li>
+                      
+                      <li class="nav-item item-icon">
+                        <span class="icon--circle">
+                          <img class="icon" src="../images/add-commodity-dark.ico" alt="">
+                        </span>
+                        <a class="nav-link" href="add-commodity.html">Add Commodity</a>
+                      </li>
+  
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdowna" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdowna">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                      </li>
+  
+                      <li class="nav-item item-icon">
+                        <span class="icon--circle">
+                          <img class="icon" src="../images/sell-dark.ico" alt="">
+                        </span>
+                        <a class="nav-link" href="sell-commodity.html">Sell</a>
+                      </li>
+                    </ul>
+                    <div class="user">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            
+                            <li class="nav-item dropdown">
+                              <a class="nav-link dropdown-toggle" href="#" id="profile" data-bs-toggle="dropdown" aria-expanded="false">
+                                <span class="icon--circle">
+                                    <img class="icon" src="../images/admin-light.ico" alt="">
+                                </span>
+                              </a>
+                              <ul class="dropdown-menu" aria-labelledby="profile">
+                                <li class="dropdown-item item-icon">
+                                  <span>
+                                    <img class="icon" src="../images/register-dark.ico" alt="">
+                                  </span>
+                                  <a class="nav-link" href="register.html">register</a>
+                                </li>
+                                <li class="dropdown-item item-icon">
+                                  <span>
+                                    <img class="icon" src="../images/logout-dark.ico" alt="">
+                                  </span>
+                                  <a class="nav-link" href="login.html">logout</a>
+                                </li>
+                              </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="user-profile.html" class="nav-link">username</a>
+                            </li>
+                        </ul>
+                    </div>
+                  </div>
+                </div>
+            </nav>
+        </header>
+    </div>
+
+    <div class="pps-menu-bar">
+        <button title="menu toggler" class="btn menu-bar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSideMenuBar" aria-expanded="false" aria-controls="collapseSideMenuBarWidth">
+            <span class="icon-container icon--circle">
+                <img class="icon" src="../images/menubar-light.ico" alt="">
+            </span>
+            <span class="btn__text">Menu</span>
+        </button>
+    </div>
+
+    <div class="container-fluid px-0 pps-content">
+
+        <div class="pps-aside">
+
+            <aside class="pps-sidebar collapse collapse-horizontal" id="collapseSideMenuBar">
+              <div class="d-flex flex-column flex-shrink-0 p-3 bg-light pps-sidebar__nav">
+                  <span class="mb-3 mb-md-0 me-md-auto pps-sidebar-title">
+                    <span class="icon-container">
+                      <img class="icon" src="../images/menubar-dark.ico" alt="">
+                    </span>
+                    <span class="fs-4">Menu</span>
+                  </span>
+                  <hr class="pps-sidebar-divider">
+                  <ul class="nav nav-pills flex-column mb-auto">
+                    <li class="nav-item">
+                      <a href="../home.html" class="nav-link" aria-current="page">
+                        <span class="icon--small bi me-2">
+                          <img class="icon" src="../images/dashboard-dark.ico" alt="">
+                        </span>
+                        Dashboard
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#" class="nav-link link-dark">
+                          <span class="icon--small bi me-2">
+                              <img class="icon" src="../images/inventory-dark.ico" alt="">
+                          </span>
+                        Inventory
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="view-budgeted-sales.html" class="nav-link link-dark">
+                          <span class="icon--small bi me-2">
+                              <img class="icon" src="../images/sales-dark.ico" alt="">
+                          </span>
+                        Sales
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="view-purchases.html" class="nav-link link-dark">
+                          <span class="icon--small bi me-2">
+                              <img class="icon" src="../images/purchase-dark.ico" alt="">
+                          </span>
+                        Purchases
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="view-financial-statements.html" class="nav-link link-dark">
+                          <span class="icon--small bi me-2">
+                              <img class="icon" src="../images/reports-dark.ico" alt="">
+                          </span>
+                          Reports
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="add-customer.html" class="nav-link link-dark">
+                          <span class="icon--small bi me-2">
+                              <img class="icon" src="../images/customers.ico" alt="">
+                          </span>
+                          Customers
+                      </a>
+                    </li>
+                  </ul>
+                  <hr>
+                  <div class="dropdown">
+                    <a href="#" class="d-flex align-items-center link-dark text-decoration-none dropdown-toggle" id="dropdownUser2" data-bs-toggle="dropdown" aria-expanded="false">
+                      <span class="icon-container">
+                          <img class="icon rounded-circle me-2" src="../images/account-dark.ico" alt="">
+                      </span>
+                      <strong>Profile</strong>
+                    </a>
+                    <ul class="dropdown-menu text-small shadow" aria-labelledby="dropdownUser2">
+                      <li class="dropdown-item item-icon username">
+                        <span class="icon-container icon--circle">
+                          <img class="icon" src="../images/admin-light.ico" alt="">
+                        </span>
+                        <a class="nav-link" href="user-profile.html">username</a>
+                      </li>
+                      <li class="dropdown-item item-icon">
+                        <span>
+                          <img class="icon" src="../images/profile-dark.ico" alt="">
+                        </span>
+                        <a class="nav-link" href="user-profile.html">Profile</a>
+                      </li>
+                      <li class="dropdown-item item-icon">
+                        <span>
+                          <img class="icon" src="../images/settings2-dark.ico" alt="">
+                        </span>
+                        <a class="nav-link" href="user-profile.html">Settings</a>
+                      </li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li class="dropdown-item item-icon">
+                        <span>
+                          <img class="icon" src="../images/logout-dark.ico" alt="">
+                        </span>
+                        <a class="nav-link" href="login.html">logout</a>
+                      </li>
+                    </ul>
+                  </div>
+              </div>
+            </aside>
+  
+            <aside class="pps-sidebar wide-display collapse collapse-horizontal" id="collapseSideMenuBar">
+                <div class="d-flex flex-column flex-shrink-0 p-3 bg-light pps-sidebar__nav">
+                    <span class="mb-3 mb-md-0 me-md-auto pps-sidebar-title">
+                      <span class="icon-container">
+                        <img class="icon" src="../images/menubar-dark.ico" alt="">
+                      </span>
+                      <span class="fs-4">Menu</span>
+                    </span>
+                    <hr class="pps-sidebar-divider">
+                    <ul class="nav nav-pills flex-column mb-auto">
+                      <li class="nav-item">
+                        <a href="../home.html" class="nav-link" aria-current="page">
+                          <span class="icon--small bi me-2">
+                            <img class="icon" src="../images/dashboard-dark.ico" alt="">
+                          </span>
+                          Dashboard
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="#" class="nav-link link-dark">
+                            <span class="icon--small bi me-2">
+                                <img class="icon" src="../images/inventory-dark.ico" alt="">
+                            </span>
+                          Inventory
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="view-budgeted-sales.html" class="nav-link link-dark">
+                            <span class="icon--small bi me-2">
+                                <img class="icon" src="../images/sales-dark.ico" alt="">
+                            </span>
+                          Sales
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="view-purchases.html" class="nav-link link-dark">
+                            <span class="icon--small bi me-2">
+                                <img class="icon" src="../images/purchase-dark.ico" alt="">
+                            </span>
+                          Purchases
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="view-financial-statements.html" class="nav-link link-dark">
+                            <span class="icon--small bi me-2">
+                                <img class="icon" src="../images/reports-dark.ico" alt="">
+                            </span>
+                            Reports
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="add-customer.html" class="nav-link link-dark">
+                            <span class="icon--small bi me-2">
+                                <img class="icon" src="../images/customers.ico" alt="">
+                            </span>
+                            Customers
+                        </a>
+                      </li>
+                    </ul>
+                    <hr>
+                    <div class="dropdown">
+                      <a href="#" class="d-flex align-items-center link-dark text-decoration-none dropdown-toggle" id="dropdownUser2" data-bs-toggle="dropdown" aria-expanded="false">
+                        <span class="icon-container">
+                            <img class="icon rounded-circle me-2" src="../images/account-dark.ico" alt="">
+                        </span>
+                        <strong>Profile</strong>
+                      </a>
+                      <ul class="dropdown-menu text-small shadow" aria-labelledby="dropdownUser2">
+                        <li class="dropdown-item item-icon username">
+                          <span class="icon-container icon--circle">
+                            <img class="icon" src="../images/admin-light.ico" alt="">
+                          </span>
+                          <a class="nav-link" href="user-profile.html">username</a>
+                        </li>
+                        <li class="dropdown-item item-icon">
+                          <span>
+                            <img class="icon" src="../images/profile-dark.ico" alt="">
+                          </span>
+                          <a class="nav-link" href="user-profile.html">Profile</a>
+                        </li>
+                        <li class="dropdown-item item-icon">
+                          <span>
+                            <img class="icon" src="../images/settings2-dark.ico" alt="">
+                          </span>
+                          <a class="nav-link" href="user-profile.html">Settings</a>
+                        </li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li class="dropdown-item item-icon">
+                          <span>
+                            <img class="icon" src="../images/logout-dark.ico" alt="">
+                          </span>
+                          <a class="nav-link" href="login.html">logout</a>
+                        </li>
+                      </ul>
+                    </div>
+                </div>
+            </aside>
+  
+            <aside class="pps-sidebar-icon">
+                <div class="d-flex flex-column flex-shrink-0 bg-light pps-sidebar__nav-icon">
+                    <span class="d-block pps-sidebar-icon-title" title="Icon-only" data-bs-toggle="tooltip" data-bs-placement="right">
+                        <span class="icon-container bi me-2">
+                            <img class="icon" src="../images/menubar-dark.ico" alt="">
+                        </span>
+                      <span class="visually-hidden">Menu</span>
+                    </span>
+                    <hr class="pps-sidebar-divider">
+                    <ul class="nav nav-pills nav-flush flex-column mb-auto text-center">
+                      <li class="nav-item">
+                        <a href="../home.html" class="nav-link py-3 border-bottom" aria-current="page" title="Dashboard" data-bs-toggle="tooltip" data-bs-placement="right">
+                            <span class="icon--small bi me-2">
+                                <img class="icon" src="../images/dashboard-dark.ico" alt="">
+                            </span>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="#" class="nav-link py-3 border-bottom" title="Inventory" data-bs-toggle="tooltip" data-bs-placement="right">
+                            <span class="icon--small bi me-2">
+                                <img class="icon" src="../images/inventory-dark.ico" alt="">
+                            </span>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="view-budgeted-sales.html" class="nav-link py-3 border-bottom" title="Sales" data-bs-toggle="tooltip" data-bs-placement="right">
+                            <span class="icon--small bi me-2">
+                                <img class="icon" src="../images/sales-dark.ico" alt="">
+                            </span>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="view-purchases.html" class="nav-link py-3 border-bottom" title="Purchases" data-bs-toggle="tooltip" data-bs-placement="right">
+                            <span class="icon--small bi me-2">
+                                <img class="icon" src="../images/purchase-dark.ico" alt="">
+                            </span>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="view-financial-statements.html" class="nav-link py-3 border-bottom" title="Reports" data-bs-toggle="tooltip" data-bs-placement="right">
+                            <span class="icon--small bi me-2">
+                                <img class="icon" src="../images/reports-dark.ico" alt="">
+                            </span>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="add-customer.html" class="nav-link py-3 border-bottom" title="Customers" data-bs-toggle="tooltip" data-bs-placement="right">
+                            <span class="icon--small bi me-2">
+                                <img class="icon" src="../images/customers.ico" alt="">
+                            </span>
+                        </a>
+                      </li>
+                    </ul>
+                    <div class="dropdown border-top">
+                      <a href="user-profile.html" class="d-flex align-items-center justify-content-center p-3 link-dark text-decoration-none dropdown-toggle" id="dropdownUser3" title="Account" data-bs-toggle="dropdown" aria-expanded="false">
+                        <span class="icon-container">
+                            <img class="icon rounded-circle me-2" src="../images/account-dark.ico" alt="">
+                        </span>
+                      </a>
+                      <ul class="dropdown-menu text-small shadow" aria-labelledby="dropdownUser3">
+                        <li class="dropdown-item item-icon username">
+                          <span class="icon-container icon--circle">
+                            <img class="icon" src="../images/admin-light.ico" alt="">
+                          </span>
+                          <a class="nav-link" href="user-profile.html">username</a>
+                        </li>
+                        <li class="dropdown-item item-icon">
+                          <span>
+                            <img class="icon" src="../images/profile-dark.ico" alt="">
+                          </span>
+                          <a class="nav-link" href="user-profile.html">Profile</a>
+                        </li>
+                        <li class="dropdown-item item-icon">
+                          <span>
+                            <img class="icon" src="../images/settings2-dark.ico" alt="">
+                          </span>
+                          <a class="nav-link" href="user-profile.html">Settings</a>
+                        </li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li class="dropdown-item item-icon">
+                          <span>
+                            <img class="icon" src="../images/logout-dark.ico" alt="">
+                          </span>
+                          <a class="nav-link" href="login.html">logout</a>
+                        </li>
+                      </ul>
+                    </div>
+                </div>
+            </aside>
+  
+        </div>
+
+        <main class="pps-main-content">
+
+          <div class="pps-main-content-header">
+            <span class="icon-container icon--circle">
+              <img class="icon" src="../images/customers.ico" alt="">
+            </span>
+            <h2 class="pps-main-content-title">Customers</h2>
+          </div>
+
+          <div class="pps-main-content-body">
+            
+            <nav class="pps-body-nav">
+              <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Customers</button>
+              </div>
+            </nav>
+            
+            <div class="tab-content pps-body-content" id="nav-tabContent">
+              
+              <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+             
+                <div class="flex flex-col--wrap ">
+
+                    <div class="commodity">
+                        <div class="card">
+                            <header class="card__header">
+                                <div class="commodity__icon">
+                                    <img class="icon" src="../images/user-light.ico" alt="">
+                                    <h3 class="commodity__name">Customer Name.</h3>
+                                </div>
+                                <div class="commodity__tags">
+                                    <span class="commodity__description">email@adress.com</span>
+                                </div>
+                            </header>
+                            <footer class="card__footer">
+                                <div class="card__divider"></div>
+                                <div class="btn--group">
+                                    <button class="btn btn--delete btn--icon btn--outline" data-bs-toggle="modal" data-bs-target="#commodityDeleteModal">
+                                        <span class="icon-container icon--small">
+                                            <img class="icon" src="../images/del-dark.ico" alt="">
+                                        </span>
+                                        <span class="btn__text">delete</span>
+                                    </button>
+    
+                                    <div class="modal commodity-delete-modal fade" id="commodityDeleteModal" data-bs-backdrop="static" tabindex="-1" role="dialog" data-bs-keyboard="false" aria-labelledby="WarningToDelete" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="exampleModalLabel">Delete Customer?</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <h5 class="text-danger warning--text">
+                                                        <span class="icon-container">
+                                                        <img class="icon" src="../images/danger-filled.ico" alt="">
+                                                        </span>
+                                                        Are You Sure?
+                                                    </h5>
+                                                    <div class="container-fluid d-flex flex-wrap">
+                                                        You are about to delete Customer from your list!
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                                                    <button type="button" class="btn btn-danger">Delete</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </footer>
+                        </div>
+                    </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <footer class="pps-main-content-footer">
+            <p>
+                View Customers
+            </p>
+          </footer>
+
+        </main>
+        
+    </div>
+
+    <div class="container-fluid px-0 pps-footer">
+        <footer class="block block--dark footer">
+          <div class="grid footer__sections">
+              <section class="collapsible collapsible--expanded footer__section">
+                  <header class="collapsible__header">
+                      <h2 class="collapsible__heading footer__heading">Products</h2>
+                      <img src="../images/chevron-light.ico" alt="" class="icon icon--white collapsible__chevron">
+                  </header>
+                  <div class="collapsible__content">
+                      <ul class="list">
+                          <li><a href="view-inventory.html">View Commodities</a></li>
+                      </ul>
+                  </div>
+              </section>
+              <section class="collapsible footer__section">
+                  <header class="collapsible__header">
+                      <h2 class="collapsible__heading footer__heading">Business</h2>
+                      <img src="../images/chevron-light.ico" alt="" class="icon icon--white collapsible__chevron">
+                  </header>
+                  <div class="collapsible__content">
+                      <ul class="list">
+                          <li><a href="user-profile.html">About</a></li>
+                          <li><a href="#">Affiliates</a></li>
+                          <li><a href="#">Blog</a></li>
+                      </ul>
+                  </div>
+              </section>
+              <section class="collapsible footer__section">
+                  <header class="collapsible__header">
+                      <h2 class="collapsible__heading footer__heading">Support</h2>
+                      <img src="../images/chevron-light.ico" alt="" class="icon icon--white collapsible__chevron">
+                  </header>
+                  <div class="collapsible__content">
+                      <ul class="list">
+                          <li><a href="user-profile.html">Contact</a></li>
+                          <li><a href="#">Knowledge Base</a></li>
+                          <li><a href="#">FAQ</a></li>
+                      </ul>
+                  </div>
+              </section>
+              <section class="collapsible footer__section">
+                  <header class="collapsible__header">
+                      <h2 class="collapsible__heading footer__heading">Find Us</h2>
+                      <img src="../images/chevron-light.ico" alt="" class="icon icon--white collapsible__chevron">
+                  </header>
+                  <div class="collapsible__content">
+                      <ul class="list list--icon">
+                          <li><a href="#">
+                            <span class="icon-container icon--small">
+                                <img class="icon" src="../images/whatsapp.ico" alt="">
+                            </span>
+                            <span>whatsapp</span>
+                          </a></li>
+                          <li><a href="#">
+                            <span class="icon-container icon--small">
+                                <img class="icon" src="../images/facebook.ico" alt="">
+                            </span>
+                            <span>facebook</span>
+                          </a></li>
+                          <li><a href="#">
+                            <span class="icon-container icon--small">
+                                <img class="icon" src="../images/instagram.ico" alt="">
+                            </span>
+                            <span>instagram</span>
+                          </a></li>
+                          <li><a href="#">
+                            <span class="icon-container icon--small">
+                                <img class="icon" src="../images/twitter.ico" alt="">
+                            </span>
+                            <span>twitter</span>
+                          </a></li>
+                      </ul>
+                  </div>
+              </section>
+              <section class="footer__brand">
+                  <img src="../images/logo-light.ico" alt="">
+                  <p class="footer__copyright">
+                      Copyright 2022 Grocery POS system
+                  </p>
+              </section>
+          </div>
+        </footer>
+    </div>
+  
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="../js/jquery.min.js" ></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/custom.js"></script>
+
+</body>
+</html>

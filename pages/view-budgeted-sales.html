@@ -433,61 +433,60 @@
               
               <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
                 
-                <div class="scrollable-list">
-                  <table class="table pps-table">
-                      <thead>
-                          <tr>
-                              <th scope="col" class="text-wrap">Name</th>
-                              <th scope="col" class="text-wrap">Budgeted Sales (K)</th>
-                              <th scope="col" class="text-wrap">Cost (K)</th>
-                              <th scope="col" class="text-wrap">Expected Gross Profit (K)</th>
-                          </tr>
-                      </thead>
-                      <tbody>
-                          <tr>
+                
+                <table class="table pps-table">
+                    <thead>
+                        <tr>
+                            <th scope="col" class="text-wrap">Name</th>
+                            <th scope="col" class="text-wrap">Budgeted Sales (K)</th>
+                            <th scope="col" class="text-wrap">Cost (K)</th>
+                            <th scope="col" class="text-wrap">Expected Gross Profit (K)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
 
-                              <th scope="row">
-                                <a href="view-commodity.html" class="data-link">
-                                  Cooking Oil
-                                </a>
-                              </th>
+                            <th scope="row">
+                              <a href="view-commodity.html" class="data-link">
+                                Cooking Oil
+                              </a>
+                            </th>
 
-                              <td>
-                                <span class="data-name">Budgeted Sales (K):</span>
-                                10000
-                              </td>
-                              <td>
-                                <span class="data-name">Cost (K):</span>
-                                8000
-                              </td>
-                              <td>
-                                <span class="data-name">Budgeted Gross Profit (K):</span>
-                                2000
-                              </td>
-                          </tr>
-                          <tr>
-                              <th scope="row">
-                                <a href="view-commodity.html" class="data-link">
-                                  Maq                                  
-                                </a>
-                              </th>
-                              <td>
-                                <span class="data-name">Budgeted Sales (K):</span>
-                                20000
-                              </td>
-                              <td>
-                                <span class="data-name">Cost (K):</span>
-                                13500
-                              </td>
-                              <td>
-                                <span class="data-name">Budgeted Gross Profit (K):</span>
-                                6500
-                              </td>
-                          </tr>
-                          
-                      </tbody>
-                  </table>
-                </div>
+                            <td>
+                              <span class="data-name">Budgeted Sales (K):</span>
+                              10000
+                            </td>
+                            <td>
+                              <span class="data-name">Cost (K):</span>
+                              8000
+                            </td>
+                            <td>
+                              <span class="data-name">Budgeted Gross Profit (K):</span>
+                              2000
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                              <a href="view-commodity.html" class="data-link">
+                                Maq                                  
+                              </a>
+                            </th>
+                            <td>
+                              <span class="data-name">Budgeted Sales (K):</span>
+                              20000
+                            </td>
+                            <td>
+                              <span class="data-name">Cost (K):</span>
+                              13500
+                            </td>
+                            <td>
+                              <span class="data-name">Budgeted Gross Profit (K):</span>
+                              6500
+                            </td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
 
                 <div class="card">
                   <div class="card__body">
@@ -505,61 +504,147 @@
               </div>
 
               <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                
+                <table class="table pps-table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Name</th>
+                            <th scope="col">Budgeted Sales (K)</th>
+                            <th scope="col">Actual Sales (K)</th>
+                            <th scope="col">Cost (K)</th>
+                            <th scope="col">Gross Profit (K)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                          <th scope="row">
+                            <a href="" data-bs-toggle="modal" data-bs-target="#itemSellInvoice_id" class="data-link">
+                              Cooking Oil
+                            </a>
+                          </th>
+                          <td>
+                            <span class="data-name">Budgeted Sales (K):</span>
+                            10000
+                          </td>
+                          <td>
+                            <span class="data-name">Actual Sales (K):</span>
+                            11500
+                          </td>
+                          <td>
+                            <span class="data-name">Cost (K):</span>
+                            8000
+                          </td>
+                          <td>
+                            <span class="data-name">Gross Profit (K):</span>
+                            3500
+                          </td>
+                      </tr>
+                      
+                      <tr>
+                          <th scope="row">Maq</th>
+                          <td>
+                            <span class="data-name">Budgeted Sales (K):</span>
+                            20000
+                          </td>
+                          <td>
+                            <span class="data-name">Actual Sales (K):</span>
+                            12000
+                          </td>
+                          <td>
+                            <span class="data-name">Cost (K):</span>
+                            13500
+                          </td>
+                          <td>
+                            <span class="data-name">Gross Profit (K):</span>
+                            -1500
+                          </td>
+                      </tr>
+                      
+                      <div class="modal commodity-delete-modal fade" id="itemSellInvoice_id" data-bs-backdrop="static" tabindex="-1" role="dialog" data-bs-keyboard="false" aria-labelledby="WarningToDelete" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
 
-                <div class="scrollable-list">
-                  <table class="table pps-table">
-                      <thead>
-                          <tr>
-                              <th scope="col">Name</th>
-                              <th scope="col">Budgeted Sales (K)</th>
-                              <th scope="col">Actual Sales (K)</th>
-                              <th scope="col">Cost (K)</th>
-                              <th scope="col">Gross Profit (K)</th>
-                          </tr>
-                      </thead>
-                      <tbody>
-                          <tr>
-                              <th scope="row">Cooking Oil</th>
-                              <td>
-                                <span class="data-name">Budgeted Sales (K):</span>
-                                10000
-                              </td>
-                              <td>
-                                <span class="data-name">Actual Sales (K):</span>
-                                11500
-                              </td>
-                              <td>
-                                <span class="data-name">Cost (K):</span>
-                                8000
-                              </td>
-                              <td>
-                                <span class="data-name">Gross Profit (K):</span>
-                                3500
-                              </td>
-                          </tr>
-                          <tr>
-                              <th scope="row">Maq</th>
-                              <td>
-                                <span class="data-name">Budgeted Sales (K):</span>
-                                20000
-                              </td>
-                              <td>
-                                <span class="data-name">Actual Sales (K):</span>
-                                12000
-                              </td>
-                              <td>
-                                <span class="data-name">Cost (K):</span>
-                                13500
-                              </td>
-                              <td>
-                                <span class="data-name">Gross Profit (K):</span>
-                                -1500
-                              </td>
-                          </tr>
-                          
-                      </tbody>
-                  </table>
-                </div>
+                                <div class="modal-header pps-main-content-header px-2">
+                                  <span class="icon-container">
+                                    <img class="icon" src="../images/item-dark.ico" alt="">
+                                    <h5 class="pps-main-content-title title-case-lower">transaction details</h5>
+                                  </span>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+
+                                <div class="modal-body">
+
+                                  <div class="commodity">
+            
+                                    <div class="card">
+                                      <header class="card__header">
+                                          <div class="commodity__icon">
+                                              <img class="icon " src="../images/item-dark.ico" alt="">
+                                              <h3 class="commodity__name">item name</h3>
+                                          </div>
+                                      </header>
+                        
+                                      <div class="card__body">
+                        
+                                          <span class="commodity__acquisition-date">
+                                              <span class="acquisition-text">Item Name</span>
+                                              <span class="badge acquisition-date">name</span>
+                                          </span>
+                        
+                                          <span class="commodity__quantity">
+                                              <span class="quantity-text">Price</span>
+                                              <div class="position-absolute end-0">
+                                                <span class="commodity__unit mx-3">
+                                                    K500
+                                                </span>
+                                              </div>
+                                          </span>
+                        
+                                          <span class="commodity__quantity">
+                                              <span class="quantity-text">Quantity</span>
+                                              <div class="position-absolute end-0">
+                                                <span class="commodity__unit mx-3">
+                                                    10
+                                                </span>
+                                              </div>
+                                          </span>
+                        
+                                          <span class="commodity__quantity">
+                                              <span class="quantity-text">Date</span>
+                                              <div class="position-absolute end-0">
+                                                <span class="commodity__unit mx-3">
+                                                    dd-mm-yyyy
+                                                </span>
+                                              </div>
+                                          </span>
+
+                                          <span class="commodity__category">
+                                            <span class="category-text">Total Cost </span>
+                                            <div class="position-absolute end-0">
+                                              <span class="badge acquisition-date mx-3">amount</span>
+                                            </div>
+                                          </span>
+                                          
+                                      </div>
+                        
+                                      <footer class="card__footer">
+                                        
+                                      </footer>
+                                      
+                                    </div>
+                        
+                                  </div>
+                                    
+                                </div>
+                                <div class="modal-footer py-1">
+                                    <button type="button" class="btn btn--edit" data-bs-dismiss="modal">close</button>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+
+                    </tbody>
+                </table>
 
                 <div class="card">
                   <div class="card__body">
