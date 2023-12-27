@@ -523,6 +523,11 @@ a {
         color: var(--color-white);
     }
 
+    .pps-table.table--single-column tbody .data-link {
+        background: var(--color-white);
+        color: var(--color-blue);
+    }
+
     .pps-table tbody td {
         padding-top: 0.3rem;
         padding-bottom: 0.3rem;
@@ -899,29 +904,29 @@ form .btn[type="submit"]:hover {
     padding: 0.3rem;
 }
 
+.card.card--secondary,
 .select-page .pps-main-content-body .card,
-.user-profile-page .pps-main-content-body .card,
 .modal .card {
     margin: 0.3rem;
     border-radius: 0;
     width: auto;
 }
 
+.card.card--secondary .card__header,
 .select-page .pps-main-content-body .card .card__header,
-.user-profile-page .pps-main-content-body .card .card__header,
 .modal .card .card__header {
     background: var(--color-white);
     color: var(--color-blue);
 }
 
+.card.card--secondary .commodity__icon,
 .select-page .pps-main-content-body .card .commodity__icon,
-.user-profile-page .pps-main-content-body .card .commodity__icon,
 .modal .card .commodity__icon {
     background: var(--color-white);
 }
 
+.card.card--secondary .commodity__name,
 .select-page .pps-main-content-body .card .commodity__name,
-.user-profile-page .pps-main-content-body .card .commodity__name,
 .modal .card .commodity__name {
     color: var(--color-blue)
 }
@@ -971,15 +976,6 @@ form .btn[type="submit"]:hover {
 
 .user-profile-page .card .btn:hover {
     border: solid 1px #08cf08;
-}
-
-.user-profile-page .commodity .card .card__btn .btn {
-        /* background: transparent;
-        border: 1px solid var(--color-blue);
-        color: inherit;
-        border-radius: 0;
-        padding: 0.2rem 0.5rem;
-        box-shadow: 0px 2px 4px 1px #00313d; */
 }
 
 @media screen and (min-width: 520px) {

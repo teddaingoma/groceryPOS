@@ -418,9 +418,9 @@
 
           <div class="pps-main-content-header">
             <span class="icon-container icon--circle">
-              <img class="icon" src="../images/inventory-dark.ico" alt="">
+              <img class="icon" src="../images/dashboard-dark.ico" alt="">
             </span>
-            <h2 class="pps-main-content-title">View Inventory</h2>
+            <h2 class="pps-main-content-title">Inventory</h2>
           </div>
 
           <div class="pps-main-content-body">
@@ -428,473 +428,447 @@
             <nav class="pps-body-nav">
               <div class="nav nav-tabs" id="nav-tab" role="tablist">
                 <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Commodities</button>
+                <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Categories</button>
               </div>
             </nav>
             
             <div class="tab-content pps-body-content" id="nav-tabContent">
               
               <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-             
-                <div class="flex flex-col--wrap scrollable-list">
+                
+                <div class="pps-commodities">
 
-                <div class="commodity">
-                    <div class="card">
-                        <header class="card__header">
-                            <div class="commodity__icon">
-                                <img class="icon" src="../images/item-light.ico" alt="">
-                                <h3 class="commodity__name">Name right here Lorem ipsum dolor sit amet consectetur adipisicing.</h3>
-                            </div>
-                            <div class="commodity__tags">
-                                <span class="commodity__price">
-                                    <span class="commodity__currency">MWK</span>
-                                    <span class="commodity__amount">999999.99</span>
-                                    <span class="commodity__unit">/Packet</span>
-                                </span>
-                                <span class="commodity__description">Thats our commodity. This is an example of a long description, but description can be as long as a paragraph</span>
-                            </div>
-                        </header>
-                        <div class="card__body">                              
-                            <span class="commodity__quantity">
-                            <span class="quantity-text">Quantity</span>
-                            <span class="badge quantity-value">9999</span>
-                            <span class="commodity__unit"> Packet(s)</span>
-                            </span>
-                            <span class="commodity__acquisition-date">
-                            <span class="acquisition-text">Acquired On</span>
-                            <span class="badge acquisition-date">08-10-2022</span>
-                            </span>
-                            <span class="commodity__category">
-                            <span class="category-text">Category (s) :</span>
-                            <a href="" role="button">
-                                <img class="icon" src="..//images/add-dark.ico" alt="">
-                            </a>
-                            <div class="category-values">
-                                <span class="badge category-value">Beverage</span>
-                                <span class="badge category-value">Sweet</span>
-                                <span class="badge category-value">Cooking</span>
-                                <span class="badge category-value">Cream</span>
-                            </div>
-                            </span>
-                            <span class="commodity__type">
-                            <span class="type-text">Type (s) :</span>
-                            <a href="" role="button">
-                                <img class="icon" src="../images/add-dark.ico" alt="">
-                            </a>
-                            <div class="type-values">
-                                <a href="" class="link"><span class="badge type-value">type1</span></a>
-                                <a href="" class="link"><span class="badge type-value">type2</span></a>
-                                <a href="" class="link"><span class="badge type-value">type3</span></a>
-                                <a href="" class="link"><span class="badge type-value">type4</span></a>
-                            </div>
-                            </span>
-                        </div>
-                        <div class="card__btn">
-                            <button class="btn btn--primary btn--img">
-                                <span class="btn__text">view</span>
-                            </button>
-                        </div>
-                        <footer class="card__footer">
-                            <div class="btn--group">
-                            <button class="btn btn--edit btn--icon">
-                                <span class="icon-container icon--small">
-                                    <img class="icon" src="../images/edit-filled.ico" alt="">
-                                </span>
-                                <span class="btn__text">edit</span>
-                            </button>
-                            <button class="btn btn--category btn--icon">
-                                <span class="icon-container icon--small">
-                                    <img class="icon" src="../images/category-dark.ico" alt="">
-                                </span>
-                                <span class="btn__text">category</span>
-                            </button>
-                            </div>
-                            <div class="card__divider"></div>
-                            <div class="btn--group">
-                                <button class="btn btn--delete btn--icon btn--outline" data-bs-toggle="modal" data-bs-target="#commodityDeleteModal">
-                                    <span class="icon-container icon--small">
-                                        <img class="icon" src="../images/del-dark.ico" alt="">
+                  <div class="flex flex-col--wrap scrollable-list">
+
+                    <div class="commodity">
+                        <div class="card">
+                            <header class="card__header">
+                                <div class="commodity__icon">
+                                    <img class="icon" src="../images/item-light.ico" alt="">
+                                    <h3 class="commodity__name">Name right here</h3>
+                                </div>
+                                <div class="commodity__tags">
+                                    <span class="commodity__price">
+                                      <span class="commodity__currency">MWK</span>
+                                      <span class="commodity__amount">5000</span>
+                                      <span class="commodity__unit">/Packet</span>
                                     </span>
-                                    <span class="btn__text">delete</span>
-                                </button>
-
-                                <div class="modal fade" id="commodityDeleteModal" data-bs-backdrop="static" tabindex="-1" role="dialog" data-bs-keyboard="false" aria-labelledby="WarningToDelete" aria-hidden="true">
-                                <div class="modal-dialog modal-dialog-centered" role="document">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h5 class="modal-title" id="exampleModalLabel">Delete Sugar</h5>
-                                            <span class="btn icon-container" data-bs-dismiss="modal" aria-label="Close">
-                                                <img class="icon" src="../images/close-dark.ico" alt="">
-                                            </span>
-                                        </div>
-                                        <div class="modal-body">
-                                            <h5 class="text-danger warning--text">
-                                                <span class="icon-container">
-                                                <img class="icon" src="../images/danger-filled.ico" alt="">
-                                                </span>
-                                                Are You Sure?
-                                            </h5>
-                                            <div class="container-fluid">
-                                                You are about to delete Sugar and all its related content from your inventory!
-                                            </div>
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-                                            <form action="" method="">
-                                                <button role="button" type="submit" class="btn">Delete</button>
-                                            </form>
-                                        </div>
-                                    </div>
+                                    <span class="commodity__description">Thats our commodity. This is an example of a long description, but description can be as long as a paragraph</span>
                                 </div>
+                            </header>
+                            <div class="card__body">
+
+                              <span class="commodity__quantity">
+                                <span class="quantity-text">Quantity</span>
+                                <span class="badge quantity-value">9999</span>
+                                <span class="commodity__unit"> Packet(s)</span>
+                              </span>
+                             
+                            </div>
+                            <div class="card__btn">
+                              <a href="view-commodity.html" class="btn btn--primary btn--img">
+                                  <span class="btn__text">view</span>
+                              </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="commodity">
+                        <div class="card">
+                            <header class="card__header">
+                                <div class="commodity__icon">
+                                    <img class="icon" src="../images/item-light.ico" alt="">
+                                    <h3 class="commodity__name">Name right here</h3>
                                 </div>
-                            </div>
-                        </footer>
-                    </div>
-                </div>
-
-                <div class="commodity">
-                    <div class="card">
-                        <header class="card__header">
-                            <div class="commodity__icon">
-                                <img class="icon" src="../images/item-light.ico" alt="">
-                                <h3 class="commodity__name">Name right here Lorem ipsum dolor sit amet consectetur adipisicing.</h3>
-                            </div>
-                            <div class="commodity__tags">
-                                <span class="commodity__price">
-                                <span class="commodity__currency">MWK</span>
-                                <span class="commodity__amount">999999.99</span>
-                                <span class="commodity__unit">/Packet</span>
-                                </span>
-                                <span class="commodity__description">Thats our commodity. This is an example of a long description, but description can be as long as a paragraph</span>
-                            </div>
-                        </header>
-                        <div class="card__body">                              
-                        <span class="commodity__quantity">
-                            <span class="quantity-text">Quantity</span>
-                            <span class="badge quantity-value">9999</span>
-                            <span class="commodity__unit"> Packet(s)</span>
-                        </span>
-                        <span class="commodity__acquisition-date">
-                            <span class="acquisition-text">Acquired On</span>
-                            <span class="badge acquisition-date">08-10-2022</span>
-                        </span>
-                        <span class="commodity__category">
-                            <span class="category-text">Category (s) :</span>
-                            <a href="" role="button">
-                            <img class="icon" src="..//images/add-dark.ico" alt="">
-                            </a>
-                            <div class="category-values">
-                            <span class="badge category-value">Beverage</span>
-                            <span class="badge category-value">Sweet</span>
-                            <span class="badge category-value">Cooking</span>
-                            <span class="badge category-value">Cream</span>
-                            </div>
-                        </span>
-                        <span class="commodity__type">
-                            <span class="type-text">Type (s) :</span>
-                            <a href="" role="button">
-                            <img class="icon" src="../images/add-dark.ico" alt="">
-                            </a>
-                            <div class="type-values">
-                            <a href="" class="link"><span class="badge type-value">type1</span></a>
-                            <a href="" class="link"><span class="badge type-value">type2</span></a>
-                            <a href="" class="link"><span class="badge type-value">type3</span></a>
-                            <a href="" class="link"><span class="badge type-value">type4</span></a>
-                            </div>
-                        </span>
-                        </div>
-                        <div class="card__btn">
-                        <button class="btn btn--primary btn--img">
-                            <span class="btn__text">view</span>
-                        </button>
-                        </div>
-                        <footer class="card__footer">
-                        <div class="btn--group">
-                            <button class="btn btn--edit btn--icon">
-                                <span class="icon-container icon--small">
-                                    <img class="icon" src="../images/edit-filled.ico" alt="">
-                                </span>
-                                <span class="btn__text">edit</span>
-                            </button>
-                            <button class="btn btn--category btn--icon">
-                                <span class="icon-container icon--small">
-                                    <img class="icon" src="../images/category-dark.ico" alt="">
-                                </span>
-                                <span class="btn__text">category</span>
-                            </button>
-                        </div>
-                        <div class="card__divider"></div>
-                        <div class="btn--group">
-                            <button class="btn btn--delete btn--icon btn--outline" data-bs-toggle="modal" data-bs-target="#commodityDeleteModal">
-                                <span class="icon-container icon--small">
-                                    <img class="icon" src="../images/del-dark.ico" alt="">
-                                </span>
-                                <span class="btn__text">delete</span>
-                            </button>
-
-                            <div class="modal fade" id="commodityDeleteModal" data-bs-backdrop="static" tabindex="-1" role="dialog" data-bs-keyboard="false" aria-labelledby="WarningToDelete" aria-hidden="true">
-                                <div class="modal-dialog modal-dialog-centered" role="document">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h5 class="modal-title" id="exampleModalLabel">Delete Sugar</h5>
-                                            <span class="btn icon-container" data-bs-dismiss="modal" aria-label="Close">
-                                            <img class="icon" src="../images/close-dark.ico" alt="">
-                                            </span>
-                                        </div>
-                                        <div class="modal-body">
-                                            <h5 class="text-danger warning--text">
-                                            <span class="icon-container">
-                                                <img class="icon" src="../images/danger-filled.ico" alt="">
-                                            </span>
-                                            Are You Sure?
-                                            </h5>
-                                            <div class="container-fluid">
-                                                You are about to delete Sugar and all its related content from your inventory!
-                                            </div>
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-                                            <form action="" method="">
-                                            <button role="button" type="submit" class="btn">Delete</button>
-                                            </form>
-                                        </div>
-                                    </div>
+                                <div class="commodity__tags">
+                                    <span class="commodity__price">
+                                      <span class="commodity__currency">MWK</span>
+                                      <span class="commodity__amount">5000</span>
+                                      <span class="commodity__unit">/Packet</span>
+                                    </span>
+                                    <span class="commodity__description">Thats our commodity. This is an example of a long description, but description can be as long as a paragraph</span>
                                 </div>
+                            </header>
+                            <div class="card__body">
+
+                              <span class="commodity__quantity">
+                                <span class="quantity-text">Quantity</span>
+                                <span class="badge quantity-value">9999</span>
+                                <span class="commodity__unit"> Packet(s)</span>
+                              </span>
+                             
+                            </div>
+                            <div class="card__btn">
+                              <a href="view-commodity.html" class="btn btn--primary btn--img">
+                                  <span class="btn__text">view</span>
+                              </a>
                             </div>
                         </div>
-                        </footer>
                     </div>
-                </div>
 
-                <div class="commodity">
-                <div class="card">
-                    <header class="card__header">
-                        <div class="commodity__icon">
-                            <img class="icon" src="../images/item-light.ico" alt="">
-                            <h3 class="commodity__name">Name right here Lorem ipsum dolor sit amet consectetur adipisicing.</h3>
-                        </div>
-                        <div class="commodity__tags">
-                            <span class="commodity__price">
-                                <span class="commodity__currency">MWK</span>
-                                <span class="commodity__amount">999999.99</span>
-                                <span class="commodity__unit">/Packet</span>
-                            </span>
-                            <span class="commodity__description">Thats our commodity. This is an example of a long description, but description can be as long as a paragraph</span>
-                        </div>
-                    </header>
-                    <div class="card__body">                              
-                        <span class="commodity__quantity">
-                        <span class="quantity-text">Quantity</span>
-                        <span class="badge quantity-value">9999</span>
-                        <span class="commodity__unit"> Packet(s)</span>
-                        </span>
-                        <span class="commodity__acquisition-date">
-                        <span class="acquisition-text">Acquired On</span>
-                        <span class="badge acquisition-date">08-10-2022</span>
-                        </span>
-                        <span class="commodity__category">
-                        <span class="category-text">Category (s) :</span>
-                        <a href="" role="button">
-                            <img class="icon" src="..//images/add-dark.ico" alt="">
-                        </a>
-                        <div class="category-values">
-                            <span class="badge category-value">Beverage</span>
-                            <span class="badge category-value">Sweet</span>
-                            <span class="badge category-value">Cooking</span>
-                            <span class="badge category-value">Cream</span>
-                        </div>
-                        </span>
-                        <span class="commodity__type">
-                        <span class="type-text">Type (s) :</span>
-                        <a href="" role="button">
-                            <img class="icon" src="../images/add-dark.ico" alt="">
-                        </a>
-                        <div class="type-values">
-                            <a href="" class="link"><span class="badge type-value">type1</span></a>
-                            <a href="" class="link"><span class="badge type-value">type2</span></a>
-                            <a href="" class="link"><span class="badge type-value">type3</span></a>
-                            <a href="" class="link"><span class="badge type-value">type4</span></a>
-                        </div>
-                        </span>
-                    </div>
-                    <div class="card__btn">
-                        <button class="btn btn--primary btn--img">
-                            <span class="btn__text">view</span>
-                        </button>
-                    </div>
-                    <footer class="card__footer">
-                        <div class="btn--group">
-                        <button class="btn btn--edit btn--icon">
-                            <span class="icon-container icon--small">
-                                <img class="icon" src="../images/edit-filled.ico" alt="">
-                            </span>
-                            <span class="btn__text">edit</span>
-                        </button>
-                        <button class="btn btn--category btn--icon">
-                            <span class="icon-container icon--small">
-                                <img class="icon" src="../images/category-dark.ico" alt="">
-                            </span>
-                            <span class="btn__text">category</span>
-                        </button>
-                        </div>
-                        <div class="card__divider"></div>
-                        <div class="btn--group">
-                            <button class="btn btn--delete btn--icon btn--outline" data-bs-toggle="modal" data-bs-target="#commodityDeleteModal">
-                                <span class="icon-container icon--small">
-                                    <img class="icon" src="../images/del-dark.ico" alt="">
-                                </span>
-                                <span class="btn__text">delete</span>
-                            </button>
-
-                            <div class="modal fade" id="commodityDeleteModal" data-bs-backdrop="static" tabindex="-1" role="dialog" data-bs-keyboard="false" aria-labelledby="WarningToDelete" aria-hidden="true">
-                            <div class="modal-dialog modal-dialog-centered" role="document">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title" id="exampleModalLabel">Delete Sugar</h5>
-                                        <span class="btn icon-container" data-bs-dismiss="modal" aria-label="Close">
-                                            <img class="icon" src="../images/close-dark.ico" alt="">
-                                        </span>
-                                    </div>
-                                    <div class="modal-body">
-                                        <h5 class="text-danger warning--text">
-                                            <span class="icon-container">
-                                            <img class="icon" src="../images/danger-filled.ico" alt="">
-                                            </span>
-                                            Are You Sure?
-                                        </h5>
-                                        <div class="container-fluid">
-                                            You are about to delete Sugar and all its related content from your inventory!
-                                        </div>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-                                        <form action="" method="">
-                                            <button role="button" type="submit" class="btn">Delete</button>
-                                        </form>
-                                    </div>
+                    <div class="commodity">
+                        <div class="card">
+                            <header class="card__header">
+                                <div class="commodity__icon">
+                                    <img class="icon" src="../images/item-light.ico" alt="">
+                                    <h3 class="commodity__name">Name right here</h3>
                                 </div>
-                            </div>
-                            </div>
-                        </div>
-                    </footer>
-                </div>
-                </div>
-
-                <div class="commodity">
-                    <div class="card">
-                        <header class="card__header">
-                            <div class="commodity__icon">
-                                <img class="icon" src="../images/item-light.ico" alt="">
-                                <h3 class="commodity__name">Name right here Lorem ipsum dolor sit amet consectetur adipisicing.</h3>
-                            </div>
-                            <div class="commodity__tags">
-                                <span class="commodity__price">
-                                <span class="commodity__currency">MWK</span>
-                                <span class="commodity__amount">999999.99</span>
-                                <span class="commodity__unit">/Packet</span>
-                                </span>
-                                <span class="commodity__description">Thats our commodity. This is an example of a long description, but description can be as long as a paragraph</span>
-                            </div>
-                        </header>
-                        <div class="card__body">                              
-                        <span class="commodity__quantity">
-                            <span class="quantity-text">Quantity</span>
-                            <span class="badge quantity-value">9999</span>
-                            <span class="commodity__unit"> Packet(s)</span>
-                        </span>
-                        <span class="commodity__acquisition-date">
-                            <span class="acquisition-text">Acquired On</span>
-                            <span class="badge acquisition-date">08-10-2022</span>
-                        </span>
-                        <span class="commodity__category">
-                            <span class="category-text">Category (s) :</span>
-                            <a href="" role="button">
-                            <img class="icon" src="..//images/add-dark.ico" alt="">
-                            </a>
-                            <div class="category-values">
-                            <span class="badge category-value">Beverage</span>
-                            <span class="badge category-value">Sweet</span>
-                            <span class="badge category-value">Cooking</span>
-                            <span class="badge category-value">Cream</span>
-                            </div>
-                        </span>
-                        <span class="commodity__type">
-                            <span class="type-text">Type (s) :</span>
-                            <a href="" role="button">
-                            <img class="icon" src="../images/add-dark.ico" alt="">
-                            </a>
-                            <div class="type-values">
-                            <a href="" class="link"><span class="badge type-value">type1</span></a>
-                            <a href="" class="link"><span class="badge type-value">type2</span></a>
-                            <a href="" class="link"><span class="badge type-value">type3</span></a>
-                            <a href="" class="link"><span class="badge type-value">type4</span></a>
-                            </div>
-                        </span>
-                        </div>
-                        <div class="card__btn">
-                        <button class="btn btn--primary btn--img">
-                            <span class="btn__text">view</span>
-                        </button>
-                        </div>
-                        <footer class="card__footer">
-                        <div class="btn--group">
-                            <button class="btn btn--edit btn--icon">
-                                <span class="icon-container icon--small">
-                                    <img class="icon" src="../images/edit-filled.ico" alt="">
-                                </span>
-                                <span class="btn__text">edit</span>
-                            </button>
-                            <button class="btn btn--category btn--icon">
-                                <span class="icon-container icon--small">
-                                    <img class="icon" src="../images/category-dark.ico" alt="">
-                                </span>
-                                <span class="btn__text">category</span>
-                            </button>
-                        </div>
-                        <div class="card__divider"></div>
-                        <div class="btn--group">
-                            <button class="btn btn--delete btn--icon btn--outline" data-bs-toggle="modal" data-bs-target="#commodityDeleteModal">
-                                <span class="icon-container icon--small">
-                                    <img class="icon" src="../images/del-dark.ico" alt="">
-                                </span>
-                                <span class="btn__text">delete</span>
-                            </button>
-
-                            <div class="modal fade" id="commodityDeleteModal" data-bs-backdrop="static" tabindex="-1" role="dialog" data-bs-keyboard="false" aria-labelledby="WarningToDelete" aria-hidden="true">
-                                <div class="modal-dialog modal-dialog-centered" role="document">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h5 class="modal-title" id="exampleModalLabel">Delete Sugar</h5>
-                                            <span class="btn icon-container" data-bs-dismiss="modal" aria-label="Close">
-                                            <img class="icon" src="../images/close-dark.ico" alt="">
-                                            </span>
-                                        </div>
-                                        <div class="modal-body">
-                                            <h5 class="text-danger warning--text">
-                                            <span class="icon-container">
-                                                <img class="icon" src="../images/danger-filled.ico" alt="">
-                                            </span>
-                                            Are You Sure?
-                                            </h5>
-                                            <div class="container-fluid">
-                                                You are about to delete Sugar and all its related content from your inventory!
-                                            </div>
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-                                            <form action="" method="">
-                                            <button role="button" type="submit" class="btn">Delete</button>
-                                            </form>
-                                        </div>
-                                    </div>
+                                <div class="commodity__tags">
+                                    <span class="commodity__price">
+                                      <span class="commodity__currency">MWK</span>
+                                      <span class="commodity__amount">5000</span>
+                                      <span class="commodity__unit">/Packet</span>
+                                    </span>
+                                    <span class="commodity__description">Thats our commodity. This is an example of a long description, but description can be as long as a paragraph</span>
                                 </div>
+                            </header>
+                            <div class="card__body">
+
+                              <span class="commodity__quantity">
+                                <span class="quantity-text">Quantity</span>
+                                <span class="badge quantity-value">9999</span>
+                                <span class="commodity__unit"> Packet(s)</span>
+                              </span>
+                             
+                            </div>
+                            <div class="card__btn">
+                              <a href="view-commodity.html" class="btn btn--primary btn--img">
+                                  <span class="btn__text">view</span>
+                              </a>
                             </div>
                         </div>
-                        </footer>
                     </div>
+
+                    <div class="commodity">
+                        <div class="card">
+                            <header class="card__header">
+                                <div class="commodity__icon">
+                                    <img class="icon" src="../images/item-light.ico" alt="">
+                                    <h3 class="commodity__name">Name right here</h3>
+                                </div>
+                                <div class="commodity__tags">
+                                    <span class="commodity__price">
+                                      <span class="commodity__currency">MWK</span>
+                                      <span class="commodity__amount">5000</span>
+                                      <span class="commodity__unit">/Packet</span>
+                                    </span>
+                                    <span class="commodity__description">Thats our commodity. This is an example of a long description, but description can be as long as a paragraph</span>
+                                </div>
+                            </header>
+                            <div class="card__body">
+
+                              <span class="commodity__quantity">
+                                <span class="quantity-text">Quantity</span>
+                                <span class="badge quantity-value">9999</span>
+                                <span class="commodity__unit"> Packet(s)</span>
+                              </span>
+                             
+                            </div>
+                            <div class="card__btn">
+                              <a href="view-commodity.html" class="btn btn--primary btn--img">
+                                  <span class="btn__text">view</span>
+                              </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="commodity">
+                        <div class="card">
+                            <header class="card__header">
+                                <div class="commodity__icon">
+                                    <img class="icon" src="../images/item-light.ico" alt="">
+                                    <h3 class="commodity__name">Name right here</h3>
+                                </div>
+                                <div class="commodity__tags">
+                                    <span class="commodity__price">
+                                      <span class="commodity__currency">MWK</span>
+                                      <span class="commodity__amount">5000</span>
+                                      <span class="commodity__unit">/Packet</span>
+                                    </span>
+                                    <span class="commodity__description">Thats our commodity. This is an example of a long description, but description can be as long as a paragraph</span>
+                                </div>
+                            </header>
+                            <div class="card__body">
+
+                              <span class="commodity__quantity">
+                                <span class="quantity-text">Quantity</span>
+                                <span class="badge quantity-value">9999</span>
+                                <span class="commodity__unit"> Packet(s)</span>
+                              </span>
+                             
+                            </div>
+                            <div class="card__btn">
+                              <a href="view-commodity.html" class="btn btn--primary btn--img">
+                                  <span class="btn__text">view</span>
+                              </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="commodity">
+                        <div class="card">
+                            <header class="card__header">
+                                <div class="commodity__icon">
+                                    <img class="icon" src="../images/item-light.ico" alt="">
+                                    <h3 class="commodity__name">Name right here</h3>
+                                </div>
+                                <div class="commodity__tags">
+                                    <span class="commodity__price">
+                                      <span class="commodity__currency">MWK</span>
+                                      <span class="commodity__amount">5000</span>
+                                      <span class="commodity__unit">/Packet</span>
+                                    </span>
+                                    <span class="commodity__description">Thats our commodity. This is an example of a long description, but description can be as long as a paragraph</span>
+                                </div>
+                            </header>
+                            <div class="card__body">
+
+                              <span class="commodity__quantity">
+                                <span class="quantity-text">Quantity</span>
+                                <span class="badge quantity-value">9999</span>
+                                <span class="commodity__unit"> Packet(s)</span>
+                              </span>
+                             
+                            </div>
+                            <div class="card__btn">
+                              <a href="view-commodity.html" class="btn btn--primary btn--img">
+                                  <span class="btn__text">view</span>
+                              </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="commodity">
+                        <div class="card">
+                            <header class="card__header">
+                                <div class="commodity__icon">
+                                    <img class="icon" src="../images/item-light.ico" alt="">
+                                    <h3 class="commodity__name">Name right here</h3>
+                                </div>
+                                <div class="commodity__tags">
+                                    <span class="commodity__price">
+                                      <span class="commodity__currency">MWK</span>
+                                      <span class="commodity__amount">5000</span>
+                                      <span class="commodity__unit">/Packet</span>
+                                    </span>
+                                    <span class="commodity__description">Thats our commodity. This is an example of a long description, but description can be as long as a paragraph</span>
+                                </div>
+                            </header>
+                            <div class="card__body">
+
+                              <span class="commodity__quantity">
+                                <span class="quantity-text">Quantity</span>
+                                <span class="badge quantity-value">9999</span>
+                                <span class="commodity__unit"> Packet(s)</span>
+                              </span>
+                             
+                            </div>
+                            <div class="card__btn">
+                              <a href="view-commodity.html" class="btn btn--primary btn--img">
+                                  <span class="btn__text">view</span>
+                              </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="commodity">
+                        <div class="card">
+                            <header class="card__header">
+                                <div class="commodity__icon">
+                                    <img class="icon" src="../images/item-light.ico" alt="">
+                                    <h3 class="commodity__name">Name right here</h3>
+                                </div>
+                                <div class="commodity__tags">
+                                    <span class="commodity__price">
+                                      <span class="commodity__currency">MWK</span>
+                                      <span class="commodity__amount">5000</span>
+                                      <span class="commodity__unit">/Packet</span>
+                                    </span>
+                                    <span class="commodity__description">Thats our commodity. This is an example of a long description, but description can be as long as a paragraph</span>
+                                </div>
+                            </header>
+                            <div class="card__body">
+
+                              <span class="commodity__quantity">
+                                <span class="quantity-text">Quantity</span>
+                                <span class="badge quantity-value">9999</span>
+                                <span class="commodity__unit"> Packet(s)</span>
+                              </span>
+                             
+                            </div>
+                            <div class="card__btn">
+                              <a href="view-commodity.html" class="btn btn--primary btn--img">
+                                  <span class="btn__text">view</span>
+                              </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="commodity">
+                        <div class="card">
+                            <header class="card__header">
+                                <div class="commodity__icon">
+                                    <img class="icon" src="../images/item-light.ico" alt="">
+                                    <h3 class="commodity__name">Name right here</h3>
+                                </div>
+                                <div class="commodity__tags">
+                                    <span class="commodity__price">
+                                      <span class="commodity__currency">MWK</span>
+                                      <span class="commodity__amount">5000</span>
+                                      <span class="commodity__unit">/Packet</span>
+                                    </span>
+                                    <span class="commodity__description">Thats our commodity. This is an example of a long description, but description can be as long as a paragraph</span>
+                                </div>
+                            </header>
+                            <div class="card__body">
+
+                              <span class="commodity__quantity">
+                                <span class="quantity-text">Quantity</span>
+                                <span class="badge quantity-value">9999</span>
+                                <span class="commodity__unit"> Packet(s)</span>
+                              </span>
+                             
+                            </div>
+                            <div class="card__btn">
+                              <a href="view-commodity.html" class="btn btn--primary btn--img">
+                                  <span class="btn__text">view</span>
+                              </a>
+                            </div>
+                        </div>
+                    </div>
+
+                  </div>
+
+                  <div>
+                    <nav aria-label="">
+                      <ul class="pagination">
+                        <li class="page-item">
+                          <a class="page-link" href="#" aria-label="Previous">
+                            <span aria-hidden="true">previous</span>
+                          </a>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item">
+                          <a class="page-link" href="#" aria-label="Next">
+                            <span aria-hidden="true">next</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </nav>
+                  </div>
+
                 </div>
 
+              </div>
 
-                </div>
+              <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                <div class="pps-commodities">
+
+                  <div class="flex flex-col--wrap scrollable-list">
+
+                    <div class="commodity">
+                        <div class="card">
+                            <header class="card__header">
+                                <div class="commodity__icon">
+                                    <img class="icon" src="../images/category-light.ico" alt="">
+                                    <h3 class="commodity__name">Vegetables</h3>
+                                </div>
+                            </header>
+                            <div class="card__body">
+
+                              <span class="commodity__acquisition-date">
+                                <span class="acquisition-text">Created On</span>
+                                <span class="badge acquisition-date">dd-mm-yyyy</span>
+                              </span>
+
+                              <table class="table pps-table table--single-column">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Commodities Assigned</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+
+                                  <tr>
+
+                                    <td>
+                                      <a href="../pages/view-commodity.html" class="data-link ">
+                                        Cooking Oil
+                                      </a>
+                                    </td>
+                                      
+                                  </tr>
+                                  <tr>
+
+                                    <td>
+                                      <a href="../pages/view-commodity.html" class="data-link ">
+                                        Blueband
+                                      </a>
+                                    </td>
+                                      
+                                  </tr>
+            
+                                </tbody>
+                              </table>
+                              
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                    <div class="commodity">
+                        <div class="card">
+                            <header class="card__header">
+                                <div class="commodity__icon">
+                                    <img class="icon" src="../images/category-light.ico" alt="">
+                                    <h3 class="commodity__name">Snacks</h3>
+                                </div>
+                            </header>
+                            <div class="card__body">
+
+                              <span class="commodity__acquisition-date">
+                                <span class="acquisition-text">Created On</span>
+                                <span class="badge acquisition-date">dd-mm-yyyy</span>
+                              </span>
+
+                              <table class="table pps-table table--single-column">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Commodities Assigned</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+
+                                  <tr>
+
+                                    <td>
+                                      <a href="../pages/view-commodity.html" class="data-link ">
+                                        Biscuits
+                                      </a>
+                                    </td>
+                                      
+                                  </tr>
+                                  <tr>
+
+                                    <td>
+                                      <a href="../pages/view-commodity.html" class="data-link ">
+                                        Cookies
+                                      </a>
+                                    </td>
+                                      
+                                  </tr>
+            
+                                </tbody>
+                              </table>
+                              
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                  </div>
 
               </div>
 
@@ -904,7 +878,7 @@
 
           <footer class="pps-main-content-footer">
             <p>
-                View Commodities
+                Dashboard
             </p>
           </footer>
 
