@@ -48,26 +48,39 @@
                         </span>
                         <a class="nav-link" href="../home.html">Home</a>
                       </li>
+                                       
                       <li class="nav-item item-icon">
                         <span class="icon--circle">
-                          <img class="icon" src="../images/add-cus-dark.ico" alt="">
-                        </span>
-                        <a class="nav-link" href="#">Add Customer</a>
-                      </li>
-                      
-                      <li class="nav-item item-icon">
-                        <span class="icon--circle">
-                          <img class="icon" src="../images/add-cus-dark.ico" alt="">
+                          <img class="icon" src="../images/add-commodity-dark.ico" alt="">
                         </span>
                         <a class="nav-link" href="../pages/add-commodity.html">Add Commodity</a>
                       </li>
 
-                      <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="dropdowna" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</a>
+                      <li class="nav-item item-icon">
+                        <span class="icon--circle">
+                          <img class="icon" src="../images/add-cus-dark.ico" alt="">
+                        </span>
+                        <a class="nav-link" href="../pages/add-customer.html">Add Customer</a>
+                      </li>
+                      
+                      <li class="nav-item item-icon">
+                        <span class="icon--circle">
+                          <img class="icon" src="../images/supplier-dark.ico" alt="">
+                        </span>
+                        <a class="nav-link" href="../pages/supplier-purchase.html">Add Supplier</a>
+                      </li>
+
+                      <li class="nav-item item-icon dropdown">
+                        <span class="icon--circle">
+                          <img class="icon" src="../images/settings2-dark.ico" alt="">
+                        </span>
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdowna" data-bs-toggle="dropdown" aria-expanded="false">Manage</a>
                         <ul class="dropdown-menu" aria-labelledby="dropdowna">
-                          <li><a class="dropdown-item" href="#">Action</a></li>
-                          <li><a class="dropdown-item" href="#">Another action</a></li>
-                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                          <li><a class="dropdown-item" href="../pages/manage-commodities.html">commodities</a></li>
+                          <li><a class="dropdown-item" href="../pages/view-customers.html">customers</a></li>
+                          <li><a class="dropdown-item" href="../pages/view-customers.html">suppliers</a></li>
+                          <hr class="dropdown-divider">
+                          <li><a class="dropdown-item" href="../pages/view-user-profile.html">Profile</a></li>
                         </ul>
                       </li>
 
@@ -75,7 +88,7 @@
                         <span class="icon--circle">
                           <img class="icon" src="../images/sell-dark.ico" alt="">
                         </span>
-                        <a class="nav-link" href="#">Sell</a>
+                        <a class="nav-link" href="../pages/sell-commodity.html">Sell</a>
                       </li>
                     </ul>
                     <div class="user">
@@ -92,18 +105,18 @@
                                   <span>
                                     <img class="icon" src="../images/register-dark.ico" alt="">
                                   </span>
-                                  <a class="nav-link" href="/pages/register.html">register</a>
+                                  <a class="nav-link" href="../pages/register.html">register</a>
                                 </li>
                                 <li class="dropdown-item item-icon">
                                   <span>
                                     <img class="icon" src="../images/logout-dark.ico" alt="">
                                   </span>
-                                  <a class="nav-link" href="/pages/login.html">logout</a>
+                                  <a class="nav-link" href="../pages/login.html">logout</a>
                                 </li>
                               </ul>
                             </li>
                             <li class="nav-item">
-                                <a href="" class="nav-link">username</a>
+                                <a href="../pages/view-user-profile.html" class="nav-link">username</a>
                             </li>
                         </ul>
                     </div>
@@ -258,52 +271,71 @@
               <section class="collapsible collapsible--expanded footer__section">
                   <header class="collapsible__header">
                       <h2 class="collapsible__heading footer__heading">Products</h2>
-                      <img src="../images/chevron.svg" alt="" class="icon icon--white collapsible__chevron">
+                      <img src="../images/chevron-light.ico" alt="" class="icon icon--white collapsible__chevron">
                   </header>
                   <div class="collapsible__content">
                       <ul class="list">
-                          <li><a href="#">Free Web Hosting</a></li>
-                          <li><a href="#">Free Automated Wordpress</a></li>
-                          <li><a href="#">Migrations</a></li>
+                          <li><a href="view-inventory.html">View Commodities</a></li>
                       </ul>
                   </div>
               </section>
               <section class="collapsible footer__section">
                   <header class="collapsible__header">
-                      <h2 class="collapsible__heading footer__heading">Company</h2>
-                      <img src="../images/chevron.svg" alt="" class="icon icon--white collapsible__chevron">
+                      <h2 class="collapsible__heading footer__heading">Business</h2>
+                      <img src="../images/chevron-light.ico" alt="" class="icon icon--white collapsible__chevron">
                   </header>
                   <div class="collapsible__content">
                       <ul class="list">
-                          <li><a href="#">About</a></li>
-                          <li><a href="#">Affiliates</a></li>
-                          <li><a href="#">Blog</a></li>
+                          <li><a href="view-user-profile.html">About</a></li>
+                          <li><a href="view-user-profile.html">Affiliates</a></li>
+                          <li><a href="view-user-profile.html">Blog</a></li>
                       </ul>
                   </div>
               </section>
               <section class="collapsible footer__section">
                   <header class="collapsible__header">
                       <h2 class="collapsible__heading footer__heading">Support</h2>
-                      <img src="../images/chevron.svg" alt="" class="icon icon--white collapsible__chevron">
+                      <img src="../images/chevron-light.ico" alt="" class="icon icon--white collapsible__chevron">
                   </header>
                   <div class="collapsible__content">
                       <ul class="list">
-                          <li><a href="#">Contact</a></li>
-                          <li><a href="#">Knowledge Base</a></li>
-                          <li><a href="#">FAQ</a></li>
+                          <li><a href="view-user-profile.html">Contact</a></li>
+                          <li><a href="view-user-profile.html">Knowledge Base</a></li>
+                          <li><a href="view-user-profile.html">FAQ</a></li>
                       </ul>
                   </div>
               </section>
               <section class="collapsible footer__section">
                   <header class="collapsible__header">
-                      <h2 class="collapsible__heading footer__heading">Domains</h2>
-                      <img src="../images/chevron.svg" alt="" class="icon icon--white collapsible__chevron">
+                      <h2 class="collapsible__heading footer__heading">Find Us</h2>
+                      <img src="../images/chevron-light.ico" alt="" class="icon icon--white collapsible__chevron">
                   </header>
                   <div class="collapsible__content">
-                      <ul class="list">
-                          <li><a href="#">Domain Checker</a></li>
-                          <li><a href="#">Domain Transfer</a></li>
-                          <li><a href="#">Free Domain</a></li>
+                      <ul class="list list--icon">
+                          <li><a href="view-user-profile.html">
+                            <span class="icon-container icon--small">
+                                <img class="icon" src="../images/whatsapp.ico" alt="">
+                            </span>
+                            <span>whatsapp</span>
+                          </a></li>
+                          <li><a href="view-user-profile.html">
+                            <span class="icon-container icon--small">
+                                <img class="icon" src="../images/facebook.ico" alt="">
+                            </span>
+                            <span>facebook</span>
+                          </a></li>
+                          <li><a href="view-user-profile.html">
+                            <span class="icon-container icon--small">
+                                <img class="icon" src="../images/instagram.ico" alt="">
+                            </span>
+                            <span>instagram</span>
+                          </a></li>
+                          <li><a href="view-user-profile.html">
+                            <span class="icon-container icon--small">
+                                <img class="icon" src="../images/twitter.ico" alt="">
+                            </span>
+                            <span>twitter</span>
+                          </a></li>
                       </ul>
                   </div>
               </section>
@@ -315,7 +347,7 @@
               </section>
           </div>
         </footer>
-    </div>
+      </div>
 
 
     <!-- Optional JavaScript -->

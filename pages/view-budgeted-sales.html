@@ -27,90 +27,103 @@
 <body class="add-commodity-body">
 
     <div class="container-fluid px-0 pps-header">
-        <header>
-            <nav class="navbar navbar-expand-lg bg-light pps-primary-navbar fixed-top" aria-label="Primary Nav bar">
-                <div class="container-fluid">
-                  <a class="navbar-brand" href="../home.html">
-                    <span class="icon--circle">
-                        <img class="icon" src="../images/logo-dark.ico" alt="">
-                    </span>
-                  </a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#ppsPrimaryNavbar" aria-controls="ppsPrimaryNavbar" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="icon-container">
-                      <img class="icon" src="../images/menu-dark.ico" alt="">
-                    </span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="ppsPrimaryNavbar">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 pps-main-nav">
-                      <li class="nav-item item-icon">
-                        <span class="icon--circle">
-                          <img class="icon" src="../images/home-dark.ico" alt="">
-                        </span>
-                        <a class="nav-link" href="#">Home</a>
-                      </li>
-                      <li class="nav-item item-icon">
-                        <span class="icon--circle">
-                          <img class="icon" src="../images/add-cus-dark.ico" alt="">
-                        </span>
-                        <a class="nav-link" href="#">Add Customer</a>
-                      </li>
+      <header>
+        <nav class="navbar navbar-expand-lg bg-light pps-primary-navbar fixed-top" aria-label="Primary Nav bar">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="../home.html">
+              <span class="icon--circle">
+                  <img class="icon" src="../images/logo-dark.ico" alt="">
+              </span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#ppsPrimaryNavbar" aria-controls="ppsPrimaryNavbar" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="icon-container">
+                <img class="icon" src="../images/menu-dark.ico" alt="">
+              </span>
+            </button>
+            <div class="collapse navbar-collapse" id="ppsPrimaryNavbar">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0 pps-main-nav">
+                <li class="nav-item item-icon">
+                  <span class="icon--circle">
+                    <img class="icon" src="../images/home-dark.ico" alt="">
+                  </span>
+                  <a class="nav-link" href="../home.html">Home</a>
+                </li>
+                                
+                <li class="nav-item item-icon">
+                  <span class="icon--circle">
+                    <img class="icon" src="../images/add-commodity-dark.ico" alt="">
+                  </span>
+                  <a class="nav-link" href="../pages/add-commodity.html">Add Commodity</a>
+                </li>
+
+                <li class="nav-item item-icon">
+                  <span class="icon--circle">
+                    <img class="icon" src="../images/add-cus-dark.ico" alt="">
+                  </span>
+                  <a class="nav-link" href="../pages/add-customer.html">Add Customer</a>
+                </li>
+                
+                <li class="nav-item item-icon">
+                  <span class="icon--circle">
+                    <img class="icon" src="../images/supplier-dark.ico" alt="">
+                  </span>
+                  <a class="nav-link" href="../pages/supplier-purchase.html">Add Supplier</a>
+                </li>
+
+                <li class="nav-item item-icon dropdown">
+                  <span class="icon--circle">
+                    <img class="icon" src="../images/settings2-dark.ico" alt="">
+                  </span>
+                  <a class="nav-link dropdown-toggle" href="#" id="dropdowna" data-bs-toggle="dropdown" aria-expanded="false">Manage</a>
+                  <ul class="dropdown-menu" aria-labelledby="dropdowna">
+                    <li><a class="dropdown-item" href="../pages/manage-commodities.html">commodities</a></li>
+                    <li><a class="dropdown-item" href="../pages/view-customers.html">customers</a></li>
+                    <li><a class="dropdown-item" href="../pages/view-customers.html">suppliers</a></li>
+                    <hr class="dropdown-divider">
+                    <li><a class="dropdown-item" href="../pages/view-user-profile.html">Profile</a></li>
+                  </ul>
+                </li>
+
+                <li class="nav-item item-icon">
+                  <span class="icon--circle">
+                    <img class="icon" src="../images/sell-dark.ico" alt="">
+                  </span>
+                  <a class="nav-link" href="../pages/sell-commodity.html">Sell</a>
+                </li>
+              </ul>
+              <div class="user">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                       
-                      <li class="nav-item item-icon">
-                        <span class="icon--circle">
-                          <img class="icon" src="../images/add-cus-dark.ico" alt="">
-                        </span>
-                        <a class="nav-link" href="../pages/add-commodity.html">Add Commodity</a>
-                      </li>
-
                       <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="dropdowna" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</a>
-                        <ul class="dropdown-menu" aria-labelledby="dropdowna">
-                          <li><a class="dropdown-item" href="#">Action</a></li>
-                          <li><a class="dropdown-item" href="#">Another action</a></li>
-                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <a class="nav-link dropdown-toggle" href="#" id="profile" data-bs-toggle="dropdown" aria-expanded="false">
+                          <span class="icon--circle">
+                              <img class="icon" src="../images/admin-light.ico" alt="">
+                          </span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="profile">
+                          <li class="dropdown-item item-icon">
+                            <span>
+                              <img class="icon" src="../images/register-dark.ico" alt="">
+                            </span>
+                            <a class="nav-link" href="../pages/register.html">register</a>
+                          </li>
+                          <li class="dropdown-item item-icon">
+                            <span>
+                              <img class="icon" src="../images/logout-dark.ico" alt="">
+                            </span>
+                            <a class="nav-link" href="../pages/login.html">logout</a>
+                          </li>
                         </ul>
                       </li>
-
-                      <li class="nav-item item-icon">
-                        <span class="icon--circle">
-                          <img class="icon" src="../images/sell-dark.ico" alt="">
-                        </span>
-                        <a class="nav-link" href="#">Sell</a>
+                      <li class="nav-item">
+                          <a href="../pages/view-user-profile.html" class="nav-link">username</a>
                       </li>
-                    </ul>
-                    <div class="user">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            
-                            <li class="nav-item dropdown">
-                              <a class="nav-link dropdown-toggle" href="#" id="profile" data-bs-toggle="dropdown" aria-expanded="false">
-                                <span class="icon--circle">
-                                    <img class="icon" src="../images/admin-light.ico" alt="">
-                                </span>
-                              </a>
-                              <ul class="dropdown-menu" aria-labelledby="profile">
-                                <li class="dropdown-item item-icon">
-                                  <span>
-                                    <img class="icon" src="../images/register-dark.ico" alt="">
-                                  </span>
-                                  <a class="nav-link" href="/pages/register.html">register</a>
-                                </li>
-                                <li class="dropdown-item item-icon">
-                                  <span>
-                                    <img class="icon" src="../images/logout-dark.ico" alt="">
-                                  </span>
-                                  <a class="nav-link" href="/pages/login.html">logout</a>
-                                </li>
-                              </ul>
-                            </li>
-                            <li class="nav-item">
-                                <a href="" class="nav-link">username</a>
-                            </li>
-                        </ul>
-                    </div>
-                  </div>
-                </div>
-            </nav>
-        </header>
+                  </ul>
+              </div>
+            </div>
+          </div>
+      </nav>
+      </header>
     </div>
 
     <div class="pps-menu-bar">
@@ -177,11 +190,19 @@
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a href="add-customer.html" class="nav-link link-dark">
+                  <a href="view-customers.html" class="nav-link link-dark">
                       <span class="icon--small bi me-2">
                           <img class="icon" src="../images/customers.ico" alt="">
                       </span>
                       Customers
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="view-customers.html" class="nav-link link-dark">
+                      <span class="icon--small bi me-2">
+                          <img class="icon" src="../images/supplier-dark.ico" alt="">
+                      </span>
+                      Suppliers
                   </a>
                 </li>
               </ul>
@@ -198,19 +219,19 @@
                     <span class="icon-container icon--circle">
                       <img class="icon" src="../images/admin-light.ico" alt="">
                     </span>
-                    <a class="nav-link" href="user-profile.html">username</a>
+                    <a class="nav-link" href="view-user-profile.html">username</a>
                   </li>
                   <li class="dropdown-item item-icon">
                     <span>
                       <img class="icon" src="../images/profile-dark.ico" alt="">
                     </span>
-                    <a class="nav-link" href="user-profile.html">Profile</a>
+                    <a class="nav-link" href="view-user-profile.html">Profile</a>
                   </li>
                   <li class="dropdown-item item-icon">
                     <span>
                       <img class="icon" src="../images/settings2-dark.ico" alt="">
                     </span>
-                    <a class="nav-link" href="user-profile.html">Settings</a>
+                    <a class="nav-link" href="view-user-profile.html">Settings</a>
                   </li>
                   <li><hr class="dropdown-divider"></li>
                   <li class="dropdown-item item-icon">
@@ -251,7 +272,7 @@
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="#" class="nav-link link-dark">
+                    <a href="view-budgeted-sales.html" class="nav-link link-dark">
                         <span class="icon--small bi me-2">
                             <img class="icon" src="../images/sales-dark.ico" alt="">
                         </span>
@@ -275,11 +296,19 @@
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="add-customer.html" class="nav-link link-dark">
+                    <a href="view-customers.html" class="nav-link link-dark">
                         <span class="icon--small bi me-2">
                             <img class="icon" src="../images/customers.ico" alt="">
                         </span>
                         Customers
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="view-customers.html" class="nav-link link-dark">
+                        <span class="icon--small bi me-2">
+                            <img class="icon" src="../images/supplier-dark.ico" alt="">
+                        </span>
+                        Suppliers
                     </a>
                   </li>
                 </ul>
@@ -296,19 +325,19 @@
                       <span class="icon-container icon--circle">
                         <img class="icon" src="../images/admin-light.ico" alt="">
                       </span>
-                      <a class="nav-link" href="user-profile.html">username</a>
+                      <a class="nav-link" href="view-user-profile.html">username</a>
                     </li>
                     <li class="dropdown-item item-icon">
                       <span>
                         <img class="icon" src="../images/profile-dark.ico" alt="">
                       </span>
-                      <a class="nav-link" href="user-profile.html">Profile</a>
+                      <a class="nav-link" href="view-user-profile.html">Profile</a>
                     </li>
                     <li class="dropdown-item item-icon">
                       <span>
                         <img class="icon" src="../images/settings2-dark.ico" alt="">
                       </span>
-                      <a class="nav-link" href="user-profile.html">Settings</a>
+                      <a class="nav-link" href="view-user-profile.html">Settings</a>
                     </li>
                     <li><hr class="dropdown-divider"></li>
                     <li class="dropdown-item item-icon">
@@ -347,7 +376,7 @@
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="#" class="nav-link py-3 border-bottom" title="Sales" data-bs-toggle="tooltip" data-bs-placement="right">
+                    <a href="view-budgeted-sales.html" class="nav-link py-3 border-bottom" title="Sales" data-bs-toggle="tooltip" data-bs-placement="right">
                         <span class="icon--small bi me-2">
                             <img class="icon" src="../images/sales-dark.ico" alt="">
                         </span>
@@ -368,15 +397,22 @@
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="add-customer.html" class="nav-link py-3 border-bottom" title="Customers" data-bs-toggle="tooltip" data-bs-placement="right">
+                    <a href="view-customers.html" class="nav-link py-3 border-bottom" title="Customers" data-bs-toggle="tooltip" data-bs-placement="right">
                         <span class="icon--small bi me-2">
                             <img class="icon" src="../images/customers.ico" alt="">
                         </span>
                     </a>
                   </li>
+                  <li class="nav-item">
+                    <a href="view-customers.html" class="nav-link py-3 border-bottom" title="Suppliers" data-bs-toggle="tooltip" data-bs-placement="right">
+                        <span class="icon--small bi me-2">
+                            <img class="icon" src="../images/supplier-dark.ico" alt="">
+                        </span>
+                    </a>
+                  </li>
                 </ul>
                 <div class="dropdown border-top">
-                  <a href="user-profile.html" class="d-flex align-items-center justify-content-center p-3 link-dark text-decoration-none dropdown-toggle" id="dropdownUser3" title="Account" data-bs-toggle="dropdown" aria-expanded="false">
+                  <a href="view-user-profile.html" class="d-flex align-items-center justify-content-center p-3 link-dark text-decoration-none dropdown-toggle" id="dropdownUser3" title="Account" data-bs-toggle="dropdown" aria-expanded="false">
                     <span class="icon-container">
                         <img class="icon rounded-circle me-2" src="../images/account-dark.ico" alt="">
                     </span>
@@ -386,19 +422,19 @@
                       <span class="icon-container icon--circle">
                         <img class="icon" src="../images/admin-light.ico" alt="">
                       </span>
-                      <a class="nav-link" href="user-profile.html">username</a>
+                      <a class="nav-link" href="view-user-profile.html">username</a>
                     </li>
                     <li class="dropdown-item item-icon">
                       <span>
                         <img class="icon" src="../images/profile-dark.ico" alt="">
                       </span>
-                      <a class="nav-link" href="user-profile.html">Profile</a>
+                      <a class="nav-link" href="view-user-profile.html">Profile</a>
                     </li>
                     <li class="dropdown-item item-icon">
                       <span>
                         <img class="icon" src="../images/settings2-dark.ico" alt="">
                       </span>
-                      <a class="nav-link" href="user-profile.html">Settings</a>
+                      <a class="nav-link" href="view-user-profile.html">Settings</a>
                     </li>
                     <li><hr class="dropdown-divider"></li>
                     <li class="dropdown-item item-icon">
@@ -414,264 +450,267 @@
 
       </div>
 
-        <main class="pps-main-content">
+      <main class="pps-main-content">
 
-          <div class="pps-main-content-header">
-            <h2 class="pps-main-content-title">View Sales</h2>
-          </div>
+        <div class="pps-main-content-header">
+          <span class="icon-container icon--circle">
+            <img class="icon" src="../images/sales-dark.ico" alt="">
+          </span>
+          <h2 class="pps-main-content-title">View Sales</h2>
+        </div>
 
-          <div class="pps-main-content-body">
+        <div class="pps-main-content-body">
+          
+          <nav class="pps-body-nav">
+            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+              <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Budgeted Sales</button>
+              <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Actual Sales</button>
+            </div>
+          </nav>
+          
+          <div class="tab-content pps-body-content" id="nav-tabContent">
             
-            <nav class="pps-body-nav">
-              <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Budgeted Sales</button>
-                <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Actual Sales</button>
-              </div>
-            </nav>
-            
-            <div class="tab-content pps-body-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
               
-              <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-                
-                
-                <table class="table pps-table">
-                    <thead>
-                        <tr>
-                            <th scope="col" class="text-wrap">Name</th>
-                            <th scope="col" class="text-wrap">Budgeted Sales (K)</th>
-                            <th scope="col" class="text-wrap">Cost (K)</th>
-                            <th scope="col" class="text-wrap">Expected Gross Profit (K)</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-
-                            <th scope="row">
-                              <a href="view-commodity.html" class="data-link">
-                                Cooking Oil
-                              </a>
-                            </th>
-
-                            <td>
-                              <span class="data-name">Budgeted Sales (K):</span>
-                              10000
-                            </td>
-                            <td>
-                              <span class="data-name">Cost (K):</span>
-                              8000
-                            </td>
-                            <td>
-                              <span class="data-name">Budgeted Gross Profit (K):</span>
-                              2000
-                            </td>
-                        </tr>
-                        <tr>
-                            <th scope="row">
-                              <a href="view-commodity.html" class="data-link">
-                                Maq                                  
-                              </a>
-                            </th>
-                            <td>
-                              <span class="data-name">Budgeted Sales (K):</span>
-                              20000
-                            </td>
-                            <td>
-                              <span class="data-name">Cost (K):</span>
-                              13500
-                            </td>
-                            <td>
-                              <span class="data-name">Budgeted Gross Profit (K):</span>
-                              6500
-                            </td>
-                        </tr>
-                        
-                    </tbody>
-                </table>
-
-                <div class="card">
-                  <div class="card__body">
-      
-                      <span class="commodity__quantity">
-                          <span class="quantity-text">Total Gross Profit (MWK)</span>
-                          <span class="badge quantity-value">
-                              8500
-                          </span>
-                      </span>
-      
-                  </div>
-                </div>
-
-              </div>
-
-              <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-                
-                <table class="table pps-table">
-                    <thead>
-                        <tr>
-                            <th scope="col">Name</th>
-                            <th scope="col">Budgeted Sales (K)</th>
-                            <th scope="col">Actual Sales (K)</th>
-                            <th scope="col">Cost (K)</th>
-                            <th scope="col">Gross Profit (K)</th>
-                        </tr>
-                    </thead>
-                    <tbody>
+              
+              <table class="table pps-table">
+                  <thead>
                       <tr>
+                          <th scope="col" class="text-wrap">Name</th>
+                          <th scope="col" class="text-wrap">Budgeted Sales (K)</th>
+                          <th scope="col" class="text-wrap">Cost (K)</th>
+                          <th scope="col" class="text-wrap">Expected Gross Profit (K)</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr>
+
                           <th scope="row">
-                            <a href="" data-bs-toggle="modal" data-bs-target="#itemSellInvoice_id" class="data-link">
+                            <a href="view-commodity.html" class="data-link">
                               Cooking Oil
                             </a>
                           </th>
+
                           <td>
                             <span class="data-name">Budgeted Sales (K):</span>
                             10000
-                          </td>
-                          <td>
-                            <span class="data-name">Actual Sales (K):</span>
-                            11500
                           </td>
                           <td>
                             <span class="data-name">Cost (K):</span>
                             8000
                           </td>
                           <td>
-                            <span class="data-name">Gross Profit (K):</span>
-                            3500
+                            <span class="data-name">Budgeted Gross Profit (K):</span>
+                            2000
                           </td>
                       </tr>
-                      
                       <tr>
-                          <th scope="row">Maq</th>
+                          <th scope="row">
+                            <a href="view-commodity.html" class="data-link">
+                              Maq                                  
+                            </a>
+                          </th>
                           <td>
                             <span class="data-name">Budgeted Sales (K):</span>
                             20000
-                          </td>
-                          <td>
-                            <span class="data-name">Actual Sales (K):</span>
-                            12000
                           </td>
                           <td>
                             <span class="data-name">Cost (K):</span>
                             13500
                           </td>
                           <td>
-                            <span class="data-name">Gross Profit (K):</span>
-                            -1500
+                            <span class="data-name">Budgeted Gross Profit (K):</span>
+                            6500
                           </td>
                       </tr>
                       
-                      <div class="modal commodity-delete-modal fade" id="itemSellInvoice_id" data-bs-backdrop="static" tabindex="-1" role="dialog" data-bs-keyboard="false" aria-labelledby="WarningToDelete" aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered" role="document">
-                            <div class="modal-content">
+                  </tbody>
+              </table>
 
-                                <div class="modal-header pps-main-content-header px-2">
-                                  <span class="icon-container">
-                                    <img class="icon" src="../images/item-dark.ico" alt="">
-                                    <h5 class="pps-main-content-title title-case-lower">transaction details</h5>
-                                  </span>
-                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                </div>
-
-                                <div class="modal-body">
-
-                                  <div class="commodity">
-            
-                                    <div class="card">
-                                      <header class="card__header">
-                                          <div class="commodity__icon">
-                                              <img class="icon " src="../images/item-dark.ico" alt="">
-                                              <h3 class="commodity__name">item name</h3>
-                                          </div>
-                                      </header>
-                        
-                                      <div class="card__body">
-                        
-                                          <span class="commodity__acquisition-date">
-                                              <span class="acquisition-text">Item Name</span>
-                                              <span class="badge acquisition-date">name</span>
-                                          </span>
-                        
-                                          <span class="commodity__quantity">
-                                              <span class="quantity-text">Price</span>
-                                              <div class="position-absolute end-0">
-                                                <span class="commodity__unit mx-3">
-                                                    K500
-                                                </span>
-                                              </div>
-                                          </span>
-                        
-                                          <span class="commodity__quantity">
-                                              <span class="quantity-text">Quantity</span>
-                                              <div class="position-absolute end-0">
-                                                <span class="commodity__unit mx-3">
-                                                    10
-                                                </span>
-                                              </div>
-                                          </span>
-                        
-                                          <span class="commodity__quantity">
-                                              <span class="quantity-text">Date</span>
-                                              <div class="position-absolute end-0">
-                                                <span class="commodity__unit mx-3">
-                                                    dd-mm-yyyy
-                                                </span>
-                                              </div>
-                                          </span>
-
-                                          <span class="commodity__category">
-                                            <span class="category-text">Total Cost </span>
-                                            <div class="position-absolute end-0">
-                                              <span class="badge acquisition-date mx-3">amount</span>
-                                            </div>
-                                          </span>
-                                          
-                                      </div>
-                        
-                                      <footer class="card__footer">
-                                        
-                                      </footer>
-                                      
-                                    </div>
-                        
-                                  </div>
-                                    
-                                </div>
-                                <div class="modal-footer py-1">
-                                    <button type="button" class="btn btn--edit" data-bs-dismiss="modal">close</button>
-                                </div>
-                            </div>
-                        </div>
-                      </div>
-
-                    </tbody>
-                </table>
-
-                <div class="card">
-                  <div class="card__body">
-      
-                      <span class="commodity__quantity">
-                          <span class="quantity-text">Total Gross Profit (MWK)</span>
-                          <span class="badge quantity-value">
-                              2000
-                          </span>
-                      </span>
-      
-                  </div>
+              <div class="card">
+                <div class="card__body">
+    
+                    <span class="commodity__quantity">
+                        <span class="quantity-text">Total Gross Profit (MWK)</span>
+                        <span class="badge quantity-value">
+                            8500
+                        </span>
+                    </span>
+    
                 </div>
+              </div>
 
+            </div>
+
+            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+              
+              <table class="table pps-table">
+                  <thead>
+                      <tr>
+                          <th scope="col">Name</th>
+                          <th scope="col">Budgeted Sales (K)</th>
+                          <th scope="col">Actual Sales (K)</th>
+                          <th scope="col">Cost (K)</th>
+                          <th scope="col">Gross Profit (K)</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                        <th scope="row">
+                          <a href="" data-bs-toggle="modal" data-bs-target="#itemSellInvoice_id" class="data-link">
+                            Cooking Oil
+                          </a>
+                        </th>
+                        <td>
+                          <span class="data-name">Budgeted Sales (K):</span>
+                          10000
+                        </td>
+                        <td>
+                          <span class="data-name">Actual Sales (K):</span>
+                          11500
+                        </td>
+                        <td>
+                          <span class="data-name">Cost (K):</span>
+                          8000
+                        </td>
+                        <td>
+                          <span class="data-name">Gross Profit (K):</span>
+                          3500
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <th scope="row">Maq</th>
+                        <td>
+                          <span class="data-name">Budgeted Sales (K):</span>
+                          20000
+                        </td>
+                        <td>
+                          <span class="data-name">Actual Sales (K):</span>
+                          12000
+                        </td>
+                        <td>
+                          <span class="data-name">Cost (K):</span>
+                          13500
+                        </td>
+                        <td>
+                          <span class="data-name">Gross Profit (K):</span>
+                          -1500
+                        </td>
+                    </tr>
+                    
+                    <div class="modal commodity-delete-modal fade" id="itemSellInvoice_id" data-bs-backdrop="static" tabindex="-1" role="dialog" data-bs-keyboard="false" aria-labelledby="WarningToDelete" aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-centered" role="document">
+                          <div class="modal-content">
+
+                              <div class="modal-header pps-main-content-header px-2">
+                                <span class="icon-container">
+                                  <img class="icon" src="../images/item-dark.ico" alt="">
+                                  <h5 class="pps-main-content-title title-case-lower">transaction details</h5>
+                                </span>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                              </div>
+
+                              <div class="modal-body">
+
+                                <div class="commodity">
+          
+                                  <div class="card">
+                                    <header class="card__header">
+                                        <div class="commodity__icon">
+                                            <img class="icon " src="../images/item-dark.ico" alt="">
+                                            <h3 class="commodity__name">item name</h3>
+                                        </div>
+                                    </header>
+                      
+                                    <div class="card__body">
+                      
+                                        <span class="commodity__acquisition-date">
+                                            <span class="acquisition-text">Item Name</span>
+                                            <span class="badge acquisition-date">name</span>
+                                        </span>
+                      
+                                        <span class="commodity__quantity">
+                                            <span class="quantity-text">Price</span>
+                                            <div class="position-absolute end-0">
+                                              <span class="commodity__unit mx-3">
+                                                  K500
+                                              </span>
+                                            </div>
+                                        </span>
+                      
+                                        <span class="commodity__quantity">
+                                            <span class="quantity-text">Quantity</span>
+                                            <div class="position-absolute end-0">
+                                              <span class="commodity__unit mx-3">
+                                                  10
+                                              </span>
+                                            </div>
+                                        </span>
+                      
+                                        <span class="commodity__quantity">
+                                            <span class="quantity-text">Date</span>
+                                            <div class="position-absolute end-0">
+                                              <span class="commodity__unit mx-3">
+                                                  dd-mm-yyyy
+                                              </span>
+                                            </div>
+                                        </span>
+
+                                        <span class="commodity__category">
+                                          <span class="category-text">Total Cost </span>
+                                          <div class="position-absolute end-0">
+                                            <span class="badge acquisition-date mx-3">amount</span>
+                                          </div>
+                                        </span>
+                                        
+                                    </div>
+                      
+                                    <footer class="card__footer">
+                                      
+                                    </footer>
+                                    
+                                  </div>
+                      
+                                </div>
+                                  
+                              </div>
+                              <div class="modal-footer py-1">
+                                  <button type="button" class="btn btn--edit" data-bs-dismiss="modal">close</button>
+                              </div>
+                          </div>
+                      </div>
+                    </div>
+
+                  </tbody>
+              </table>
+
+              <div class="card">
+                <div class="card__body">
+    
+                    <span class="commodity__quantity">
+                        <span class="quantity-text">Total Gross Profit (MWK)</span>
+                        <span class="badge quantity-value">
+                            2000
+                        </span>
+                    </span>
+    
+                </div>
               </div>
 
             </div>
 
           </div>
 
-          <footer class="pps-main-content-footer">
-            <p>
-                View Sales
-            </p>
-          </footer>
+        </div>
 
-        </main>
+        <footer class="pps-main-content-footer">
+          <p>
+              View Sales
+          </p>
+        </footer>
+
+      </main>
         
     </div>
 
@@ -696,9 +735,9 @@
                 </header>
                 <div class="collapsible__content">
                     <ul class="list">
-                        <li><a href="user-profile.html">About</a></li>
-                        <li><a href="#">Affiliates</a></li>
-                        <li><a href="#">Blog</a></li>
+                        <li><a href="view-user-profile.html">About</a></li>
+                        <li><a href="view-user-profile.html">Affiliates</a></li>
+                        <li><a href="view-user-profile.html">Blog</a></li>
                     </ul>
                 </div>
             </section>
@@ -709,9 +748,9 @@
                 </header>
                 <div class="collapsible__content">
                     <ul class="list">
-                        <li><a href="user-profile.html">Contact</a></li>
-                        <li><a href="#">Knowledge Base</a></li>
-                        <li><a href="#">FAQ</a></li>
+                        <li><a href="view-user-profile.html">Contact</a></li>
+                        <li><a href="view-user-profile.html">Knowledge Base</a></li>
+                        <li><a href="view-user-profile.html">FAQ</a></li>
                     </ul>
                 </div>
             </section>
@@ -722,25 +761,25 @@
                 </header>
                 <div class="collapsible__content">
                     <ul class="list list--icon">
-                        <li><a href="#">
+                        <li><a href="view-user-profile.html">
                           <span class="icon-container icon--small">
                               <img class="icon" src="../images/whatsapp.ico" alt="">
                           </span>
                           <span>whatsapp</span>
                         </a></li>
-                        <li><a href="#">
+                        <li><a href="view-user-profile.html">
                           <span class="icon-container icon--small">
                               <img class="icon" src="../images/facebook.ico" alt="">
                           </span>
                           <span>facebook</span>
                         </a></li>
-                        <li><a href="#">
+                        <li><a href="view-user-profile.html">
                           <span class="icon-container icon--small">
                               <img class="icon" src="../images/instagram.ico" alt="">
                           </span>
                           <span>instagram</span>
                         </a></li>
-                        <li><a href="#">
+                        <li><a href="view-user-profile.html">
                           <span class="icon-container icon--small">
                               <img class="icon" src="../images/twitter.ico" alt="">
                           </span>
