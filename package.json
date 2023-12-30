@@ -4,7 +4,7 @@
   "description": "Grocery POS system FYP",
   "source": "index.html",
   "scripts": {
-    "start": "parcel home.html"
+    "build": "parcel build home.html"
   },
   "repository": {
     "type": "git",
