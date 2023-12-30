@@ -1,0 +1,9 @@
+**** PARCEL BUNDLER ****
+- npm init -y
+- npm install --save-dev -g parcel // global installation
+- parcel build home.html // build your app for production or testing
+- in netlify (or if errors with minifying occurs), use "--no-minify" option
+// in the package.json file edit this part:
+"scripts": {
+    "start": "parcel home.html" //i think that this command runs when ever npm is started, and it builds the app
+  }
